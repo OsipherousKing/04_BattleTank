@@ -1,8 +1,8 @@
 {
 	"Changelist" : 3299760,
-	"BuildId" : "0b3e451f-387c-4bd9-8c99-7ee66b856dbe",
+	"BuildId" : "",
 	"Modules" : 
 	{
-		"BattleTank" : "UE4Editor-BattleTank-8699.dll"
+		"BattleTank" : "UE4Editor-BattleTank-4211.dll"
 	}
 }

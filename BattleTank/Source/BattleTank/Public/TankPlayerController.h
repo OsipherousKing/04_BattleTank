@@ -18,6 +18,6 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 public:
 	ATank* GetControlledTank() const; // Getter method to get tank
 
-	
+	void BeginPlay() override;
 	
 };
