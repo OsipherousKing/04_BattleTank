@@ -3,6 +3,22 @@
 #include "BattleTank.h"
 #include "TankAIController.h"
 
+
+void ATankAIController::Tick(float DeltaTime)
+{
+	//AimTowardsCrosshair();
+	Super::Tick(DeltaTime);
+	if (GetPlayerTank())
+	{
+		//TODO move twoards player
+
+		// Aim towards the player
+		GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+		// Fire if ready
+	}
+	// UE_LOG(LogTemp, Warning, TEXT("I am ticking all the time"));
+}
+
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
