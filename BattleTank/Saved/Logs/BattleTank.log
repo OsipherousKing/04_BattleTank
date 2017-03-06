@@ -42578,3 +42578,9 @@ Scale3D: 1.000000 1.000000 1.000000
 [2017.03.06-23.27.52:663][512]LogTemp:Warning: Tank_BP_2059 aiming at X=-0.002 Y=-0.028 Z=92.634
 [2017.03.06-23.27.52:664][512]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
 [2017.03.06-23.27.52:790][512]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-23.30.45:654][767]LogHttp:Warning: 00000204AFA42B00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.03.06-23.30.45:654][767]LogHttp:Warning: 00000204AFA42B00: libcurl info message cache 0 (Connection 127 seems to be dead!)
+[2017.03.06-23.30.45:654][767]LogHttp:Warning: 00000204AFA42B00: libcurl info message cache 1 (Closing connection 127)
+[2017.03.06-23.30.45:654][767]LogHttp:Warning: 00000204AFA42B00: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.03.06-23.30.45:654][767]LogHttp:Warning: 00000204AFA42B00: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.03.06-23.30.45:655][767]LogHttp:Warning: 00000204AFA42B00: libcurl info message cache 4 (Closing connection 128)
