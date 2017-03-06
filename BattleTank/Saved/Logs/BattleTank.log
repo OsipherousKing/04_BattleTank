@@ -3161,3 +3161,1452 @@ LogInit: Object subsystem initialized
 [2017.03.06-19.16.49:726][166]LogTemp:Warning: HitLocation: X=1.000 Y=1.000 Z=1.000
 [2017.03.06-19.16.49:727][166]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
 [2017.03.06-19.16.49:778][166]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.33.50:407][559]Recompiling BattleTank...
+[2017.03.06-19.33.50:408][559]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9909 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.03.06-19.33.50:467][559]Warning: Starting HotReload took  0.1s.
+[2017.03.06-19.34.12:661][501]CompilerResultsLog: New page: Compilation - Mar 6, 2017, 9:34:12 AM
+[2017.03.06-19.34.12:662][501]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.03.06-19.34.12:662][501]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.03.06-19.34.12:662][501]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.03.06-19.34.12:663][501]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 14.126398 seconds
+[2017.03.06-19.34.12:663][501]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.03.06-19.34.12:663][501]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.03.06-19.34.12:663][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Logging/LogMacros.h(34) : error C2665: 'CheckVA': none of the 11 overloads could convert all the argument types
+[2017.03.06-19.34.12:664][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(87) : note: could be 'bool CheckVA(bool)'
+[2017.03.06-19.34.12:664][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(86) : note: or       'void *CheckVA(ANSICHAR *)'
+[2017.03.06-19.34.12:664][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(85) : note: or       'TCHAR CheckVA(TCHAR)'
+[2017.03.06-19.34.12:665][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(84) : note: or       'long CheckVA(unsigned long)'
+[2017.03.06-19.34.12:665][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(83) : note: or       'long CheckVA(long)'
+[2017.03.06-19.34.12:665][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(82) : note: or       'double CheckVA(double)'
+[2017.03.06-19.34.12:665][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(81) : note: or       'int64 CheckVA(int64)'
+[2017.03.06-19.34.12:666][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(80) : note: or       'uint64 CheckVA(uint64)'
+[2017.03.06-19.34.12:666][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(79) : note: or       'int32 CheckVA(int32)'
+[2017.03.06-19.34.12:666][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(78) : note: or       'uint8 CheckVA(uint8)'
+[2017.03.06-19.34.12:666][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Misc/VarArgs.h(77) : note: or       'uint32 CheckVA(uint32)'
+[2017.03.06-19.34.12:667][501]CompilerResultsLog:Error: Error c:\program files\epic games\ue_4.15\engine\source\runtime\core\public\Logging/LogMacros.h(34) : note: while trying to match the argument list '(FVector2D)'
+[2017.03.06-19.34.12:667][501]CompilerResultsLog:Error: Error C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(59) : note: see reference to function template instantiation 'void FMsg::Logf_Internal<FVector2D>(const ANSICHAR *,int32,const FName &,ELogVerbosity::Type,const TCHAR *,T1)' being compiled
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info         with
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info         [
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info             T1=FVector2D
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info         ]
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9909.dll
+[2017.03.06-19.34.12:668][501]CompilerResultsLog: Info Total build time: 21.72 seconds (Local executor: 0.00 seconds)
+[2017.03.06-19.34.12:668][501]LogMainFrame: MainFrame: Module compiling took 22.269 seconds
+[2017.03.06-19.34.12:669][501]Warning: HotReload failed, recompile failed
+[2017.03.06-19.34.43:158][918]Recompiling BattleTank...
+[2017.03.06-19.34.43:159][918]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 5027 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.03.06-19.34.43:237][918]Warning: Starting HotReload took  0.1s.
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: New page: Compilation - Mar 6, 2017, 9:34:50 AM
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-5027.dll
+[2017.03.06-19.34.50:208][535]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-5027.lib
+[2017.03.06-19.34.50:209][535]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5027.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5027.suppressed.exp
+[2017.03.06-19.34.50:209][535]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5027.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5027.exp
+[2017.03.06-19.34.50:210][535]CompilerResultsLog: Info Total build time: 6.48 seconds (Local executor: 4.28 seconds)
+[2017.03.06-19.34.50:210][535]LogMainFrame: MainFrame: Module compiling took 7.060 seconds
+[2017.03.06-19.34.50:382][535]LogClass: Could not find existing class TankPlayerController in package /Script/BattleTank for HotReload, assuming new class
+[2017.03.06-19.34.50:390][535]LogHotReload: Re-instancing TankPlayerController after hot-reload.
+[2017.03.06-19.34.50:599][535]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0085 seconds. Added 4 classes and 3 folders.
+[2017.03.06-19.34.50:601][535]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.03.06-19.34.50:655][535]LogContentBrowser: Native class hierarchy populated in 0.0220 seconds. Added 2250 classes and 457 folders.
+[2017.03.06-19.34.50:655][535]Display: HotReload took  7.5s.
+[2017.03.06-19.34.52:845][748]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.06-19.34.52:863][748]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.34.52:864][748]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.06-19.34.52:864][748]PIE: New page: PIE session: BattleGround (Mar 6, 2017, 9:34:52 AM)
+[2017.03.06-19.34.52:865][748]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.03.06-19.34.52:958][748]LogPlayLevel: PIE: StaticDuplicateObject took: (0.093008s)
+[2017.03.06-19.34.52:959][748]LogAIModule: Creating AISystem for world BattleGround
+[2017.03.06-19.34.52:959][748]LogPlayLevel: PIE: World Init took: (0.001310s)
+[2017.03.06-19.34.52:959][748]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.094957s)
+[2017.03.06-19.34.52:983][748]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.06-19.34.53:031][748]LogInit: FAudioDevice initialized.
+[2017.03.06-19.34.53:062][748]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.03.06-19.34.53:071][748]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.03.06-14.34.53
+[2017.03.06-19.34.53:072][748]LogWorld: Bringing up level for play took: 0.008945
+[2017.03.06-19.34.53:076][748]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.34.53:076][748]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.34.53:076][748]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.34.53:076][748]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.34.53:076][748]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.03.06-19.34.53:076][748]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.16
+[2017.03.06-19.34.53:077][748]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.34.53:077][748]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:109][749]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:118][750]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:126][751]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:136][752]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:147][753]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:160][754]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:174][755]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:186][756]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:197][757]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:210][758]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:221][759]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:231][760]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:242][761]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:255][762]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:271][763]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:281][764]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:292][765]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:305][766]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:315][767]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:326][768]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:338][769]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:350][770]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:363][771]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:374][772]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:386][773]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:399][774]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:412][775]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:424][776]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:436][777]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:447][778]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:456][779]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:466][780]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:478][781]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:491][782]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:503][783]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:514][784]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:524][785]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:535][786]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:546][787]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:556][788]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:567][789]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:580][790]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:593][791]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:604][792]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:615][793]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:627][794]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:637][795]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:649][796]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:659][797]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:671][798]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:682][799]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:693][800]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:702][801]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:711][802]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:720][803]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:728][804]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:737][805]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:746][806]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:755][807]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:766][808]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:776][809]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:786][810]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:796][811]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:805][812]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:814][813]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:825][814]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:835][815]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:845][816]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:856][817]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:868][818]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:879][819]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:891][820]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:903][821]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:912][822]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:923][823]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:935][824]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:944][825]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:954][826]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:964][827]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:976][828]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.53:986][829]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:003][830]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:014][831]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:022][832]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:037][833]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:049][834]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:061][835]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:074][836]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:085][837]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:095][838]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:106][839]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:117][840]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:128][841]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:138][842]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:150][843]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:164][844]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:175][845]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:187][846]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:200][847]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:212][848]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:234][849]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:246][850]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:258][851]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:270][852]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:282][853]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:295][854]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:306][855]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:319][856]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:331][857]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:342][858]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:354][859]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:368][860]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:379][861]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:393][862]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:406][863]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:420][864]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:431][865]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:442][866]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:455][867]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:466][868]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:477][869]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:487][870]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:500][871]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:512][872]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:524][873]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:540][874]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:551][875]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:560][876]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:569][877]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:577][878]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:585][879]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:594][880]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:602][881]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:611][882]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:620][883]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:631][884]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:643][885]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:653][886]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:664][887]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:676][888]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:688][889]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:699][890]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:711][891]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:722][892]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:734][893]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:746][894]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:755][895]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:768][896]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:777][897]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:788][898]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:800][899]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:811][900]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:823][901]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:834][902]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:842][903]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:852][904]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:862][905]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:875][906]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:887][907]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:901][908]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:914][909]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:925][910]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:937][911]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:948][912]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:960][913]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:972][914]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:983][915]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.54:995][916]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:006][917]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:016][918]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:029][919]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:041][920]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:053][921]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:063][922]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:076][923]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:087][924]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:097][925]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:115][926]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:127][927]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:138][928]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:148][929]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:157][930]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:167][931]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:177][932]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:186][933]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:195][934]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:205][935]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:219][936]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:228][937]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:237][938]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:247][939]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:256][940]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:267][941]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:278][942]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:288][943]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:299][944]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:309][945]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:319][946]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:329][947]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:340][948]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:351][949]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:362][950]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:372][951]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:382][952]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:393][953]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:403][954]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:413][955]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:422][956]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:433][957]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:443][958]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:454][959]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:464][960]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:476][961]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:486][962]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:496][963]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:506][964]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:517][965]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:526][966]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:537][967]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:547][968]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:558][969]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:570][970]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:579][971]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:589][972]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:600][973]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:610][974]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:619][975]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:629][976]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:639][977]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:648][978]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:659][979]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:670][980]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:679][981]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:689][982]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:699][983]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:708][984]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:719][985]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:730][986]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:740][987]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:750][988]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:760][989]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:771][990]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:782][991]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:798][992]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:808][993]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:819][994]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:830][995]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:841][996]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:852][997]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:863][998]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:873][999]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:884][  0]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:895][  1]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:911][  2]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:921][  3]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:932][  4]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:942][  5]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:954][  6]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:965][  7]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:975][  8]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:986][  9]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.55:997][ 10]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:007][ 11]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:025][ 12]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:036][ 13]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:047][ 14]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:058][ 15]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:069][ 16]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:081][ 17]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:092][ 18]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:105][ 19]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:115][ 20]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:129][ 21]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:142][ 22]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:155][ 23]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:169][ 24]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:180][ 25]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:190][ 26]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:202][ 27]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:212][ 28]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:224][ 29]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:236][ 30]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:246][ 31]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:260][ 32]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:279][ 33]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:291][ 34]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:303][ 35]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:313][ 36]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:326][ 37]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:339][ 38]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:353][ 39]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:365][ 40]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:378][ 41]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:392][ 42]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:403][ 43]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:413][ 44]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:422][ 45]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:433][ 46]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:444][ 47]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:455][ 48]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:474][ 49]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:485][ 50]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:494][ 51]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:504][ 52]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:514][ 53]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:523][ 54]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:533][ 55]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:542][ 56]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:553][ 57]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:562][ 58]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:574][ 59]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:584][ 60]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:601][ 61]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:611][ 62]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:622][ 63]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:633][ 64]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:642][ 65]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:652][ 66]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:660][ 67]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:669][ 68]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:679][ 69]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:690][ 70]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:701][ 71]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:712][ 72]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:721][ 73]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:729][ 74]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:739][ 75]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:749][ 76]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:760][ 77]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:770][ 78]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:780][ 79]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:789][ 80]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:800][ 81]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:809][ 82]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:819][ 83]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:827][ 84]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:836][ 85]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:845][ 86]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:854][ 87]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:863][ 88]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:872][ 89]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:881][ 90]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:891][ 91]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:900][ 92]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:908][ 93]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:918][ 94]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:928][ 95]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:938][ 96]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:949][ 97]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:965][ 98]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:975][ 99]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:985][100]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.56:995][101]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:007][102]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:018][103]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:030][104]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:041][105]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:053][106]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:067][107]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:078][108]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:090][109]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:101][110]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:114][111]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:126][112]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:137][113]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:148][114]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:158][115]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:168][116]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:177][117]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:186][118]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:197][119]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:219][120]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:227][121]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:236][122]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:245][123]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:260][124]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:270][125]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:344][126]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:353][127]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:363][128]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:372][129]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:381][130]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:394][131]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:404][132]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:414][133]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:423][134]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:437][135]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:448][136]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:458][137]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:468][138]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:479][139]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:489][140]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:500][141]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:510][142]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:519][143]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:531][144]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:542][145]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:553][146]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:576][147]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:586][148]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:595][149]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:605][150]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:615][151]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:623][152]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:632][153]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:641][154]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:651][155]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:661][156]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:672][157]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:681][158]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:691][159]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:700][160]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:709][161]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:718][162]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:727][163]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:738][164]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:757][165]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:766][166]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:783][167]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:792][168]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:802][169]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:811][170]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:823][171]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:832][172]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:840][173]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:851][174]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:860][175]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:870][176]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:878][177]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:888][178]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:896][179]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:907][180]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:916][181]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:925][182]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:936][183]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:946][184]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:957][185]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:966][186]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:977][187]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:987][188]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.57:997][189]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:006][190]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:016][191]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:025][192]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:035][193]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:044][194]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:054][195]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:063][196]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:072][197]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:082][198]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:091][199]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:101][200]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:110][201]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:120][202]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:130][203]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:140][204]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:154][205]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:170][206]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:185][207]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:196][208]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:208][209]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:220][210]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:232][211]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:243][212]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:258][213]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:272][214]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:284][215]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:295][216]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:309][217]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:321][218]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:333][219]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:345][220]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:357][221]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:372][222]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:388][223]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:400][224]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:413][225]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:426][226]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:435][227]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:445][228]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:456][229]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:476][230]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:488][231]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:499][232]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:510][233]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:519][234]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:529][235]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:538][236]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:549][237]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:559][238]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:570][239]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:584][240]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:593][241]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:602][242]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:611][243]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:621][244]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:633][245]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:643][246]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:654][247]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:664][248]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:675][249]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:684][250]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:693][251]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:705][252]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:714][253]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:727][254]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:737][255]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:747][256]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:756][257]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:770][258]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:781][259]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:791][260]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:803][261]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:814][262]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:825][263]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:835][264]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:844][265]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:853][266]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:864][267]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:872][268]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:881][269]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:891][270]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:901][271]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:912][272]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:923][273]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:934][274]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:943][275]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:954][276]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:966][277]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:977][278]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:987][279]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.58:998][280]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:009][281]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:021][282]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:031][283]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:043][284]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:053][285]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:068][286]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:078][287]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:088][288]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:098][289]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:108][290]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:119][291]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:130][292]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:141][293]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:154][294]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:167][295]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:177][296]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:186][297]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:196][298]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:206][299]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:215][300]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:226][301]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:236][302]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:246][303]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:256][304]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:266][305]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:276][306]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:286][307]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:295][308]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:304][309]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:312][310]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:322][311]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:332][312]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:342][313]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:351][314]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:361][315]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:370][316]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:380][317]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:391][318]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:402][319]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:412][320]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:421][321]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:431][322]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:441][323]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:451][324]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:462][325]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:471][326]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:481][327]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:490][328]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:499][329]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:508][330]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:516][331]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:525][332]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:533][333]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:542][334]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:555][335]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:566][336]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:577][337]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:587][338]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:595][339]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:604][340]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:614][341]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:622][342]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:633][343]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:643][344]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:654][345]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:664][346]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:673][347]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:685][348]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:697][349]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:708][350]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:718][351]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:731][352]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:742][353]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:753][354]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:765][355]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:776][356]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:790][357]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:802][358]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:812][359]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:822][360]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:834][361]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:844][362]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:854][363]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:865][364]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:884][365]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:893][366]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:904][367]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:916][368]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:926][369]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:937][370]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:948][371]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:959][372]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:969][373]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:986][374]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.34.59:999][375]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:009][376]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:020][377]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:031][378]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:041][379]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:053][380]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:064][381]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:075][382]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:086][383]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:101][384]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:110][385]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:121][386]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:132][387]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:143][388]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:153][389]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:163][390]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:173][391]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:183][392]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:199][393]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:210][394]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:220][395]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:230][396]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:241][397]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:251][398]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:259][399]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:270][400]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:282][401]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:293][402]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:305][403]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:317][404]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:328][405]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:340][406]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:355][407]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:381][408]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:390][409]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:404][410]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:416][411]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:427][412]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:437][413]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:449][414]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:460][415]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:470][416]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:481][417]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:490][418]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:500][419]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:522][420]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:531][421]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:540][422]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:550][423]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:558][424]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:568][425]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:576][426]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:586][427]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:594][428]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:605][429]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:615][430]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:623][431]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:634][432]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:645][433]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:656][434]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:668][435]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:680][436]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:692][437]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:707][438]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:719][439]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:730][440]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:741][441]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:752][442]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:763][443]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:772][444]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:782][445]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:796][446]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:814][447]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:826][448]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:837][449]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:845][450]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:855][451]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:866][452]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:878][453]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:889][454]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:902][455]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:913][456]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:923][457]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:933][458]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:943][459]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:952][460]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:962][461]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:971][462]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:979][463]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:987][464]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.00:998][465]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:006][466]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:017][467]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:025][468]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:034][469]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:044][470]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:055][471]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:065][472]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:075][473]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:084][474]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.01:085][474]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.01:135][474]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.02:602][621]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2017.03.06-19.35.05:531][856]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.03.06-19.35.06:463][930]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.06-19.35.06:479][930]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.06:479][930]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.06-19.35.06:479][930]PIE: New page: PIE session: BattleGround (Mar 6, 2017, 9:35:06 AM)
+[2017.03.06-19.35.06:480][930]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.03.06-19.35.06:575][930]LogPlayLevel: PIE: StaticDuplicateObject took: (0.094921s)
+[2017.03.06-19.35.06:576][930]LogAIModule: Creating AISystem for world BattleGround
+[2017.03.06-19.35.06:576][930]LogPlayLevel: PIE: World Init took: (0.001070s)
+[2017.03.06-19.35.06:576][930]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.096679s)
+[2017.03.06-19.35.06:604][930]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.06-19.35.06:656][930]LogInit: FAudioDevice initialized.
+[2017.03.06-19.35.06:689][930]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.03.06-19.35.06:700][930]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.03.06-14.35.06
+[2017.03.06-19.35.06:701][930]LogWorld: Bringing up level for play took: 0.010141
+[2017.03.06-19.35.06:705][930]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.06:705][930]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.06:705][930]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.06:705][930]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.06:705][930]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.03.06-19.35.06:705][930]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.531
+[2017.03.06-19.35.06:706][930]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.06:706][930]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:741][931]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:752][932]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:763][933]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:772][934]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:781][935]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:791][936]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:800][937]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:809][938]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:821][939]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:833][940]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:843][941]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:853][942]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:862][943]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:872][944]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:880][945]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:891][946]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:902][947]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:911][948]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:919][949]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:927][950]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:939][951]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:950][952]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:961][953]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:970][954]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:980][955]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.06:989][956]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:000][957]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:011][958]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:020][959]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:030][960]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:040][961]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:049][962]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:059][963]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:071][964]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:083][965]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:095][966]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:106][967]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:118][968]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:129][969]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:139][970]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:149][971]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:158][972]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:170][973]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:183][974]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:195][975]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:211][976]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:222][977]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:233][978]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:245][979]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:256][980]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:266][981]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:276][982]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:297][983]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:310][984]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:322][985]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:335][986]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:351][987]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:363][988]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:374][989]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:385][990]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:397][991]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:408][992]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:423][993]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:444][994]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:455][995]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:463][996]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:472][997]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:482][998]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:493][999]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:504][  0]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:517][  1]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:530][  2]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:541][  3]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:558][  4]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:571][  5]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:583][  6]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:596][  7]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:608][  8]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:620][  9]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:633][ 10]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:645][ 11]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:664][ 12]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:685][ 13]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:700][ 14]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:710][ 15]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:720][ 16]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:730][ 17]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:740][ 18]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:752][ 19]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:767][ 20]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:779][ 21]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:791][ 22]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:804][ 23]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:816][ 24]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:827][ 25]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:838][ 26]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:849][ 27]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:859][ 28]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:869][ 29]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:879][ 30]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:892][ 31]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:904][ 32]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:916][ 33]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:927][ 34]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:938][ 35]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:948][ 36]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:959][ 37]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:971][ 38]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:982][ 39]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.07:992][ 40]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:001][ 41]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:009][ 42]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:020][ 43]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:032][ 44]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:044][ 45]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:056][ 46]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:066][ 47]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:077][ 48]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:087][ 49]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:096][ 50]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:106][ 51]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:117][ 52]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:127][ 53]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:136][ 54]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:145][ 55]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:156][ 56]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:167][ 57]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:177][ 58]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:188][ 59]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:201][ 60]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:214][ 61]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:225][ 62]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:234][ 63]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:245][ 64]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:255][ 65]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:263][ 66]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:272][ 67]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:280][ 68]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:290][ 69]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:300][ 70]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:311][ 71]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:322][ 72]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:331][ 73]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:341][ 74]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:353][ 75]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:363][ 76]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:375][ 77]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:387][ 78]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:398][ 79]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:409][ 80]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:420][ 81]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:430][ 82]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:441][ 83]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:452][ 84]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:464][ 85]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:475][ 86]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:485][ 87]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:494][ 88]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:503][ 89]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:514][ 90]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:522][ 91]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:530][ 92]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:540][ 93]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:551][ 94]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:559][ 95]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:570][ 96]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:580][ 97]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:589][ 98]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:597][ 99]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:607][100]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:618][101]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:627][102]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:637][103]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:647][104]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:655][105]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:664][106]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:673][107]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:682][108]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:692][109]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:702][110]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:711][111]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:719][112]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:728][113]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:738][114]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:748][115]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:757][116]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:765][117]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:773][118]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:784][119]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:794][120]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:804][121]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:814][122]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:826][123]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:836][124]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:844][125]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:853][126]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:862][127]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:873][128]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:884][129]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:892][130]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:901][131]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:909][132]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:917][133]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:927][134]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:936][135]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:946][136]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:956][137]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:965][138]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:973][139]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:982][140]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:991][141]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.08:999][142]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:007][143]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:016][144]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:024][145]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:032][146]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:041][147]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:049][148]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:058][149]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.09:059][149]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.09:116][149]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.12:180][410]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2017.03.06-19.35.24:197][380]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2017.03.06-19.35.24:876][442]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (Atmospheric Fog)
+[2017.03.06-19.35.32:820][316]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.03.06-19.35.34:609][522]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.06-19.35.34:622][522]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.34:622][522]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.06-19.35.34:622][522]PIE: New page: PIE session: BattleGround (Mar 6, 2017, 9:35:34 AM)
+[2017.03.06-19.35.34:623][522]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.03.06-19.35.34:705][522]LogPlayLevel: PIE: StaticDuplicateObject took: (0.082660s)
+[2017.03.06-19.35.34:706][522]LogAIModule: Creating AISystem for world BattleGround
+[2017.03.06-19.35.34:707][522]LogPlayLevel: PIE: World Init took: (0.001107s)
+[2017.03.06-19.35.34:707][522]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.084383s)
+[2017.03.06-19.35.34:726][522]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.03.06-19.35.34:768][522]LogInit: FAudioDevice initialized.
+[2017.03.06-19.35.34:797][522]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.03.06-19.35.34:804][522]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.03.06-14.35.34
+[2017.03.06-19.35.34:805][522]LogWorld: Bringing up level for play took: 0.006900
+[2017.03.06-19.35.34:808][522]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.34:808][522]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.34:808][522]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.34:808][522]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.03.06-19.35.34:809][522]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.03.06-19.35.34:809][522]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.427
+[2017.03.06-19.35.34:809][522]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.34:810][522]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:831][523]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:839][524]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:847][525]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:856][526]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:864][527]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:872][528]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:881][529]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:889][530]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:897][531]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:906][532]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:914][533]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:923][534]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:932][535]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:940][536]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:948][537]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:957][538]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:965][539]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:973][540]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:982][541]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:990][542]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.34:998][543]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:007][544]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:015][545]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:023][546]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:032][547]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:040][548]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:048][549]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:057][550]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:065][551]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:073][552]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:082][553]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:090][554]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:098][555]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:107][556]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:115][557]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:124][558]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:132][559]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:140][560]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:149][561]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:157][562]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:165][563]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:174][564]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:182][565]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:190][566]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:199][567]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:207][568]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:215][569]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:224][570]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:232][571]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:240][572]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:249][573]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:257][574]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:265][575]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:274][576]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:282][577]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:290][578]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:299][579]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:307][580]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:315][581]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:324][582]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:332][583]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:340][584]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:349][585]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:357][586]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:365][587]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:374][588]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:382][589]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:392][590]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:400][591]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:408][592]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:417][593]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:425][594]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:433][595]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:442][596]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:450][597]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:458][598]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:467][599]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:475][600]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:483][601]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:492][602]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:500][603]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:508][604]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:517][605]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:525][606]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:533][607]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:542][608]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:550][609]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:558][610]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:567][611]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:575][612]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:583][613]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:592][614]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:600][615]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:608][616]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:617][617]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:625][618]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:633][619]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:641][620]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:650][621]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:659][622]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:667][623]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:675][624]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:684][625]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:692][626]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:700][627]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:709][628]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:717][629]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:725][630]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:734][631]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:742][632]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:750][633]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:759][634]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:767][635]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:775][636]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:784][637]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:792][638]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:800][639]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:809][640]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:817][641]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:825][642]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:833][643]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:842][644]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:850][645]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:858][646]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:867][647]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:875][648]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:884][649]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:892][650]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:900][651]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:908][652]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:917][653]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:925][654]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:933][655]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:942][656]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:950][657]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:958][658]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:967][659]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:975][660]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:983][661]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.35:992][662]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:000][663]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:008][664]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:017][665]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:025][666]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:033][667]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:042][668]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:050][669]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:058][670]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:067][671]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:075][672]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:083][673]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:092][674]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:100][675]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:108][676]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:117][677]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:125][678]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:133][679]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:142][680]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:150][681]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:158][682]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:167][683]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:175][684]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:183][685]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:192][686]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:200][687]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:209][688]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:217][689]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:225][690]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:234][691]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:242][692]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:250][693]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:259][694]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:267][695]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:275][696]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:284][697]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:292][698]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:300][699]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:309][700]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:317][701]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:325][702]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:335][703]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:343][704]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:351][705]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:359][706]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:368][707]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:376][708]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:385][709]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:393][710]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:401][711]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:410][712]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:418][713]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:427][714]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:435][715]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:443][716]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:451][717]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:460][718]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:468][719]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:476][720]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:485][721]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:493][722]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:501][723]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:510][724]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:518][725]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:526][726]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:535][727]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:543][728]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:551][729]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:560][730]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:568][731]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:577][732]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:585][733]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:593][734]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:602][735]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:611][736]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:619][737]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:629][738]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:638][739]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:646][740]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:654][741]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:663][742]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:671][743]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:679][744]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:688][745]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:697][746]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:705][747]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:714][748]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:723][749]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:732][750]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:741][751]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:750][752]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:759][753]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:768][754]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:777][755]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:787][756]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:797][757]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:806][758]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:823][759]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:834][760]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:843][761]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:852][762]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:861][763]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:876][764]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:888][765]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:896][766]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:908][767]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:927][768]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:936][769]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:945][770]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:954][771]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:963][772]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:972][773]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:981][774]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.36:991][775]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:001][776]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:011][777]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:022][778]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:031][779]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:040][780]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:052][781]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:060][782]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:071][783]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:083][784]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:092][785]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:100][786]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:110][787]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:124][788]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:135][789]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:144][790]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:153][791]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:161][792]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:170][793]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:180][794]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:189][795]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:199][796]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:208][797]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:218][798]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:226][799]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:235][800]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:243][801]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:251][802]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:260][803]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:268][804]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:277][805]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:285][806]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:294][807]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:302][808]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:312][809]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:324][810]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:336][811]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:345][812]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:354][813]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:362][814]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:370][815]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:379][816]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:390][817]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:401][818]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:417][819]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:425][820]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:433][821]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:442][822]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:450][823]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:458][824]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:467][825]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:475][826]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:483][827]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:492][828]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:500][829]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:509][830]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:519][831]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:529][832]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:538][833]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:549][834]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:558][835]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:566][836]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:574][837]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:583][838]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:592][839]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:602][840]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:611][841]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:621][842]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:630][843]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:638][844]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:648][845]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:657][846]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:666][847]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:675][848]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:685][849]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:693][850]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:705][851]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:717][852]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:727][853]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:737][854]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:747][855]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:756][856]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:765][857]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:774][858]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:782][859]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:790][860]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:803][861]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:819][862]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:827][863]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:836][864]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:845][865]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:853][866]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:862][867]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:871][868]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:881][869]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:891][870]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:904][871]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:915][872]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:924][873]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:933][874]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:942][875]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:953][876]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:961][877]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:969][878]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:979][879]LogTemp:Warning: ScreenLocation: X=497.000 Y=195.647
+[2017.03.06-19.35.37:980][879]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.38:036][879]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.03.06-19.35.55:039][667]LogSlate: Took 0.000384 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.06-19.36.05:193][703]LogSlate: Took 0.000500 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.06-19.36.05:311][703]LogSavePackage: Save=940.90ms
+[2017.03.06-19.36.05:311][703]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround_Auto17B94F00C40C5F2DD56AA60A26B971829.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap'
+[2017.03.06-19.36.05:314][703]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap
+[2017.03.06-19.36.05:330][703]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/BattleGround' took 1.264
+[2017.03.06-19.36.05:330][703]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.264
+[2017.03.06-19.36.12:518][281]LogSavePackage: Save=843.98ms
+[2017.03.06-19.36.12:518][281]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround406E0FD7413EF99551270B8D8AB25256.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap'
+[2017.03.06-19.36.12:530][281]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap
+[2017.03.06-19.36.12:594][281]LogFileHelpers: Saving map 'BattleGround' took 1.132
+[2017.03.06-19.38.20:145][ 38]LogHotReload: New module detected: UE4Editor-BattleTank-7396.dll
+[2017.03.06-19.38.22:326][ 45]LogHotReload: Starting Hot-Reload from IDE
+[2017.03.06-19.38.23:042][ 45]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0093 seconds. Added 4 classes and 3 folders.
+[2017.03.06-19.38.23:045][ 45]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.03.06-19.38.23:109][ 45]LogContentBrowser: Native class hierarchy populated in 0.0281 seconds. Added 2250 classes and 457 folders.
+[2017.03.06-19.38.23:120][ 45]Display: HotReload took  0.8s.
