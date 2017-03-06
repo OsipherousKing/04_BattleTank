@@ -64,12 +64,18 @@
     <ClInclude Include="..\..\Source\BattleTank\Public\TankAIController.h">
       <Filter>Source\BattleTank\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\BattleTank\Public\TankAimingComponent.h">
+      <Filter>Source\BattleTank\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp">
       <Filter>Source\BattleTank\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BattleTank\Private\TankAIController.cpp">
+      <Filter>Source\BattleTank\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BattleTank\Private\TankAimingComponent.cpp">
       <Filter>Source\BattleTank\Private</Filter>
     </ClCompile>
   </ItemGroup>
