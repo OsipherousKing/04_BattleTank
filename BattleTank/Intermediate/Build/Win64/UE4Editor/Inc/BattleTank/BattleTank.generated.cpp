@@ -23,7 +23,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetBarrelReference",(Native)&ATank::execSetBarrelReference);
 	}
-	IMPLEMENT_CLASS(ATank, 829604600);
+	IMPLEMENT_CLASS(ATank, 84252773);
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 	}
@@ -161,6 +161,9 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ATank_SetBarrelReference());
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_LaunchSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LaunchSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(LaunchSpeed, ATank), 0x0040000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetBarrelReference(), "SetBarrelReference"); // 2743197906
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -168,6 +171,8 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Tank.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+				MetaData->SetValue(NewProp_LaunchSpeed, TEXT("Category"), TEXT("Firing"));
+				MetaData->SetValue(NewProp_LaunchSpeed, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
 #endif
 			}
 		}
@@ -260,7 +265,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xD891CFC9;
+			Guid.A = 0x3DCA6937;
 			Guid.B = 0x0B62C63D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
