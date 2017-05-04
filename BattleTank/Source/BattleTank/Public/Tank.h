@@ -2,12 +2,13 @@
 // For Future reference don't hash include headers into headers
 #pragma once
 
-#include "TankAimingComponent.h"
+
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h" // Put new includes above
 
+// forward declarations
 class UTankBarrel; // Forward Declaration
-
+class UTankAimingComponent;
 UCLASS()
 class BATTLETANK_API ATank : public APawn
 {
