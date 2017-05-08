@@ -1,9 +1,9 @@
-﻿Log file open, 05/08/17 12:31:21
+﻿Log file open, 05/08/17 13:40:39
 LogInit:Display: Running engine for game: BattleTank
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-213929925) SRandInit(-213929925).
+LogInit:Display: RandInit(1936198614) SRandInit(1936198614).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.165924
+LogStats: Stats thread started at 0.101609
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -48,735 +48,857 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.05.08-16.31.23:384][  0]LogInit: Selected Device Profile: [Windows]
-[2017.05.08-16.31.23:384][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.05.08-16.31.23:415][  0]LogInit: Computer: ZIGGY-PC
-[2017.05.08-16.31.23:415][  0]LogInit: User: Ziggy
-[2017.05.08-16.31.23:415][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.05.08-16.31.23:415][  0]LogInit: High frequency timer resolution =3.613392 MHz
-[2017.05.08-16.31.23:415][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.05.08-16.31.23:415][  0]LogMemory: Platform Memory Stats for Windows
-[2017.05.08-16.31.23:415][  0]LogMemory: Process Physical Memory: 262.74 MB used, 262.74 MB peak
-[2017.05.08-16.31.23:415][  0]LogMemory: Process Virtual Memory: 262.78 MB used, 262.78 MB peak
-[2017.05.08-16.31.23:415][  0]LogMemory: Physical Memory: 7468.19 MB used,  8835.07 MB free, 16303.26 MB total
-[2017.05.08-16.31.23:415][  0]LogMemory: Virtual Memory: 630.74 MB used,  8835.07 MB free, 134217728.00 MB total
-[2017.05.08-16.31.23:551][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.05.08-16.31.25:291][  0]LogD3D11RHI: D3D11 adapters:
-[2017.05.08-16.31.25:883][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 780' (Feature Level 11_0)
-[2017.05.08-16.31.25:883][  0]LogD3D11RHI:       3039/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.05.08-16.31.25:886][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.05.08-16.31.25:886][  0]LogD3D11RHI:       0/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.05.08-16.31.25:886][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.05.08-16.31.25:918][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.05.08-16.31.25:918][  0]LogD3D11RHI:     GPU DeviceId: 0x1004 (for the marketing name, search the web for "GPU Device Id")
-[2017.05.08-16.31.25:918][  0]LogWindows: EnumDisplayDevices:
-[2017.05.08-16.31.25:918][  0]LogWindows:    0. 'NVIDIA GeForce GTX 780' (P:0 D:1)
-[2017.05.08-16.31.25:918][  0]LogWindows:    1. 'NVIDIA GeForce GTX 780' (P:1 D:1)
-[2017.05.08-16.31.25:919][  0]LogWindows:    2. 'NVIDIA GeForce GTX 780' (P:0 D:0)
-[2017.05.08-16.31.25:919][  0]LogWindows:    3. 'NVIDIA GeForce GTX 780' (P:0 D:0)
-[2017.05.08-16.31.25:919][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.05.08-16.31.25:919][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 780
-[2017.05.08-16.31.25:919][  0]LogD3D11RHI:   Driver Version: 381.89 (internal:22.21.13.8189, unified:381.89)
-[2017.05.08-16.31.25:919][  0]LogD3D11RHI:      Driver Date: 4-19-2017
-[2017.05.08-16.31.25:919][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.05.08-16.31.26:518][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
-[2017.05.08-16.31.26:519][  0]LogD3D11RHI: Async texture creation enabled
-[2017.05.08-16.31.26:567][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.05.08-16.31.26:665][  0]LogShaderCompilers: Guid format shader working directory is -47 characters bigger than the processId version (../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Intermediate/Shaders/WorkingDirectory/262336/).
-[2017.05.08-16.31.26:665][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ziggy/AppData/Local/Temp/UnrealShaderWorkingDir/E5687FF44A4FC5DCFDCB1B809E0BE22A/'.
-[2017.05.08-16.31.26:666][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.05.08-16.31.29:615][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.05.08-16.31.29:731][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.05.08-16.31.29:848][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.05.08-16.31.29:964][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.05.08-16.31.30:126][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.05.08-16.31.30:247][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.05.08-16.31.30:363][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.05.08-16.31.30:485][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.05.08-16.31.30:588][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.05.08-16.31.30:715][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.05.08-16.31.30:828][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.05.08-16.31.30:943][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.05.08-16.31.31:065][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.05.08-16.31.31:184][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.05.08-16.31.31:299][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.05.08-16.31.31:532][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.05.08-16.31.31:532][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.05.08-16.31.31:637][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.05.08-16.31.31:820][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.05.08-16.31.31:869][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.05.08-16.31.31:981][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.05.08-16.31.32:097][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.05.08-16.31.32:213][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.05.08-16.31.32:330][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.05.08-16.31.32:330][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.05.08-16.31.33:333][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.05.08-16.31.33:723][  0]LogDerivedDataCache: Loaded boot cache 0.39s 50MB C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.05.08-16.31.33:723][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
-[2017.05.08-16.31.33:724][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.05.08-16.31.33:724][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.05.08-16.31.33:724][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.05.08-16.31.33:724][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.05.08-16.31.33:743][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.05.08-16.31.33:756][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ziggy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.05.08-16.31.33:766][  0]LogSlate: Using Freetype 2.6.0
-[2017.05.08-16.31.33:785][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.05.08-16.31.33:786][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.05.08-16.31.35:178][  0]LogInit: Selected Device Profile: [Windows]
-[2017.05.08-16.31.35:180][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.05.08-16.31.35:562][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.05.08-16.31.35:672][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.05.08-16.31.35:830][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.05.08-16.31.35:830][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.05.08-16.31.35:830][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.05.08-16.31.36:709][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
-[2017.05.08-16.31.36:769][  0]LogAssetRegistry: FAssetRegistry took 0.0214 seconds to start up
-[2017.05.08-16.31.36:837][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.034545 seconds
-[2017.05.08-16.31.36:842][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
-[2017.05.08-16.31.36:842][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
-[2017.05.08-16.31.36:842][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.05.08-16.31.36:941][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.05.08-16.31.54:865][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.05.08-16.31.54:954][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.05.08-16.31.56:695][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.05.08-16.31.57:661][  0]SourceControl: Info Source control is disabled
-[2017.05.08-16.31.58:197][  0]SourceControl: Info Source control is disabled
-[2017.05.08-16.31.58:344][  0]SourceControl: Info Source control is disabled
-[2017.05.08-16.31.58:481][  0]SourceControl: Info Source control is disabled
-[2017.05.08-16.32.03:430][  0]LogEngine: Initializing Engine...
-[2017.05.08-16.32.03:432][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.05.08-16.32.04:001][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.05.08-16.32.04:023][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.05.08-16.32.04:074][  0]LogInit: FAudioDevice initialized.
-[2017.05.08-16.32.04:104][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.05.08-16.32.04:112][  0]LogInit: Texture streaming: Enabled
-[2017.05.08-16.32.04:311][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.05.08-16.32.04:611][  0]LogInit: Transaction tracking system initialized
-[2017.05.08-16.32.05:454][  0]BlueprintLog: New page: Editor Load
-[2017.05.08-16.32.07:465][  0]LocalizationService: Info Localization service is disabled
-[2017.05.08-16.32.09:196][  0]LogConsoleResponse:Display: 
-[2017.05.08-16.32.09:386][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.05.08-16.32.09:386][  0]LogCook:Display: Mobile HDR setting 1
-[2017.05.08-16.32.10:036][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' took 0.01s
-[2017.05.08-16.32.12:258][  0]SourceControl: Info Source control is disabled
-[2017.05.08-16.32.12:258][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.05.08-16.32.12:259][  0]LightingResults: New page: Lighting Build
-[2017.05.08-16.32.12:359][  0]MapCheck: New page: Map Check
-[2017.05.08-16.32.12:359][  0]LightingResults: New page: Lighting Build
-[2017.05.08-16.32.15:980][  0]LogAIModule: Creating AISystem for world BattleGround
-[2017.05.08-16.32.17:629][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.05.08-16.32.17:629][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.05.08-16.32.17:854][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 223.893ms to complete.
-[2017.05.08-16.32.17:854][  0]LogFileHelpers: Loading map 'BattleGround' took 5.596
-[2017.05.08-16.32.17:921][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.05.08-16.32.18:120][  0]LogCollectionManager: Loaded 0 collections in 0.003393 seconds
-[2017.05.08-16.32.18:269][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Collections/' took 0.01s
-[2017.05.08-16.32.18:269][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Developers/Ziggy/Collections/' took 0.01s
-[2017.05.08-16.32.18:269][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Collections/' took 0.01s
-[2017.05.08-16.32.18:269][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2017.05.08-16.32.18:288][  0]LogContentBrowser: Native class hierarchy populated in 0.0184 seconds. Added 2253 classes and 456 folders.
-[2017.05.08-16.32.18:292][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.05.08-16.32.18:292][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.05.08-16.32.18:432][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0090 seconds. Added 0 classes and 0 folders.
-[2017.05.08-16.32.19:096][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0095 seconds. Added 0 classes and 0 folders.
-[2017.05.08-16.32.19:215][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0092 seconds. Added 1 classes and 2 folders.
-[2017.05.08-16.32.19:440][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.05.08-16.32.19:448][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.05.08-16.32.19:578][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0097 seconds. Added 1 classes and 2 folders.
-[2017.05.08-16.32.19:579][  0]LogLoad: (Engine Initialization) Total time: 64.41 seconds
-[2017.05.08-16.32.19:579][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.25 seconds
-[2017.05.08-16.32.19:579][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.05.08-16.32.19:579][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.05.08-16.32.19:588][  0]LogOcInput: OculusInput pre-init called
-[2017.05.08-16.32.19:614][  0]LogContentStreaming: Texture pool size now 800 MB
-[2017.05.08-16.32.19:616][  0]LogSlate: Took 0.000417 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.05.08-16.32.19:635][  0]LogSlate: Took 0.016070 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.05.08-16.32.19:651][  0]LogSlate: Took 0.009230 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.05.08-16.32.19:789][  0]LogSlate: Took 0.000259 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.05.08-16.32.19:831][  0]LogRenderer: Reallocating scene render targets to support 996x588 NumSamples 1 (Frame:2).
-[2017.05.08-16.32.19:914][  1]LogAssetRegistry: Asset discovery search completed in 43.1665 seconds
-[2017.05.08-16.32.19:914][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
-[2017.05.08-16.32.19:914][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
-[2017.05.08-16.32.20:616][ 65]LogSlate: Took 0.001009 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.05.08-16.32.45:183][790]LogSlate: Took 0.000282 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.05.08-16.32.45:888][790]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0096 seconds. Added 112 classes and 0 folders.
-[2017.05.08-16.32.46:652][790]LogSlate: Took 0.000337 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.05.08-16.46.52:245][951]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Source/BattleTank/Public/TankTurret.h'
-[2017.05.08-16.46.52:285][951]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Source/BattleTank/Private/TankTurret.cpp'
-[2017.05.08-16.47.29:198][189]Recompiling BattleTank...
-[2017.05.08-16.47.29:199][189]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4972 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-16.47.29:248][189]Warning: Starting HotReload took  0.1s.
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: New page: Compilation - May 8, 2017, 8:48:03 AM
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info Parsing headers for BattleTankEditor
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 11.7747703 seconds
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info Performing 6 actions (4 in parallel)
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info TankTurret.cpp
-[2017.05.08-16.48.03:458][441]CompilerResultsLog: Info TankBarrel.cpp
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info BattleTank.generated.cpp
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info TankAimingComponent.cpp
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info [5/6] Link UE4Editor-BattleTank-4972.dll
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info [6/6] Link UE4Editor-BattleTank-4972.lib
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4972.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4972.suppressed.exp
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4972.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4972.exp
-[2017.05.08-16.48.03:459][441]CompilerResultsLog: Info Total build time: 33.54 seconds (Local executor: 4.61 seconds)
-[2017.05.08-16.48.03:459][441]LogMainFrame: MainFrame: Module compiling took 34.269 seconds
-[2017.05.08-16.48.03:634][441]LogClass: Could not find existing class TankBarrel in package /Script/BattleTank for HotReload, assuming new class
-[2017.05.08-16.48.03:635][441]LogClass: Could not find existing class TankTurret in package /Script/BattleTank for HotReload, assuming new class
-[2017.05.08-16.48.03:641][441]LogHotReload: Re-instancing TankBarrel after hot-reload.
-[2017.05.08-16.48.03:902][441]LogHotReload: Re-instancing TankTurret after hot-reload.
-[2017.05.08-16.48.04:024][441]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0103 seconds. Added 8 classes and 3 folders.
-[2017.05.08-16.48.04:026][441]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
-[2017.05.08-16.48.04:457][441]LogContentBrowser: Native class hierarchy populated in 0.0187 seconds. Added 2255 classes and 460 folders.
-[2017.05.08-16.48.04:705][441]Display: HotReload took 35.6s.
-[2017.05.08-16.48.24:190][269]LogSlate: Took 0.000396 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2017.05.08-16.48.24:341][270]LogSlate: Took 0.000372 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2017.05.08-16.52.58:077][705]BlueprintLog: New page: Compile Tank_BP
-[2017.05.08-16.52.58:839][754]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_BP" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset" SILENT=true
-[2017.05.08-16.52.58:905][754]LogSavePackage: Save=51.96ms
-[2017.05.08-16.52.58:905][754]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Tank_BPA826C8794F03D183A763FEBD9EB926DD.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset'
-[2017.05.08-16.52.58:912][754]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset
-[2017.05.08-16.53.01:566][942]LogSavePackage: Save=695.73ms
-[2017.05.08-16.53.01:566][942]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround2FF64E82433A0E9259BF5E93D20366E2.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap'
-[2017.05.08-16.53.01:575][942]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap
-[2017.05.08-16.53.01:615][942]LogFileHelpers: Saving map 'BattleGround' took 1.027
-[2017.05.08-16.53.03:305][105]LogTemp: Repeting last play command: Selected Viewport
-[2017.05.08-16.53.03:335][105]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-16.53.03:336][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.05.08-16.53.03:336][105]PIE: New page: PIE session: BattleGround (May 8, 2017, 8:53:03 AM)
-[2017.05.08-16.53.03:336][105]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
-[2017.05.08-16.53.03:444][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.108580s)
-[2017.05.08-16.53.03:445][105]LogAIModule: Creating AISystem for world BattleGround
-[2017.05.08-16.53.03:446][105]LogPlayLevel: PIE: World Init took: (0.001030s)
-[2017.05.08-16.53.03:446][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.109975s)
-[2017.05.08-16.53.03:484][105]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.05.08-16.53.03:547][105]LogInit: FAudioDevice initialized.
-[2017.05.08-16.53.03:650][105]LogLoad: Game class is 'BattleTankGameMode_BP_C'
-[2017.05.08-16.53.03:659][105]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-12.53.03
-[2017.05.08-16.53.03:660][105]LogWorld: Bringing up level for play took: 0.008949
-[2017.05.08-16.53.03:932][105]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0160 seconds. Added 11 classes and 0 folders.
-[2017.05.08-16.53.03:935][105]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-16.53.03:935][105]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-16.53.03:935][105]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-16.53.03:935][105]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-16.53.03:935][105]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
-[2017.05.08-16.53.03:936][105]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 1.044
-[2017.05.08-16.53.03:936][105]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-16.53.20:903][811]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-16.53.20:950][811]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.00.57:390][ 75]LogRenderer: Reallocating scene render targets to support 1144x912 NumSamples 1 (Frame:78336).
-[2017.05.08-17.01.04:773][919]BlueprintLog: New page: Compile Projectile_BP
-[2017.05.08-17.01.05:490][961]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Projectile_BP" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset" SILENT=true
-[2017.05.08-17.01.05:518][961]LogSavePackage: Save=11.39ms
-[2017.05.08-17.01.05:518][961]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Projectile_BP2D0C73FC446D09E07CE42C9F971A6CDD.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset'
-[2017.05.08-17.01.05:527][961]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset
-[2017.05.08-17.01.09:055][131]LogSavePackage: Save=1025.57ms
-[2017.05.08-17.01.09:056][131]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround8BABC8904DECE407BAD81680A258495A.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap'
-[2017.05.08-17.01.09:065][131]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap
-[2017.05.08-17.01.09:104][131]LogFileHelpers: Saving map 'BattleGround' took 1.652
-[2017.05.08-17.01.44:461][434]BlueprintLog: New page: Compile Projectile_BP
-[2017.05.08-17.01.45:126][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Projectile_BP" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset" SILENT=true
-[2017.05.08-17.01.45:158][460]LogSavePackage: Save=18.68ms
-[2017.05.08-17.01.45:158][460]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Projectile_BP5027966E4DF2B7A115369E9E6A0FDFD3.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset'
-[2017.05.08-17.01.45:164][460]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/Projectile_BP.uasset
-[2017.05.08-17.01.47:166][651]LogEditorViewport: Clicking on Actor (LMB): Projectile_BP_C (Projectile_BP)
-[2017.05.08-17.01.48:538][733]Cmd: DELETE
-[2017.05.08-17.01.48:538][733]Cmd: ACTOR DELETE
-[2017.05.08-17.01.48:556][733]LogEditorActor: Deleted Actor: Projectile_BP_C
-[2017.05.08-17.01.48:579][733]LogEditorActor: Deleted 1 Actors (0.041 secs)
-[2017.05.08-17.01.56:132][238]LogEditorViewport: Clicking on Actor (LMB): Projectile_BP_C (Projectile_BP)
-[2017.05.08-17.01.58:114][413]Cmd: DELETE
-[2017.05.08-17.01.58:114][413]Cmd: ACTOR DELETE
-[2017.05.08-17.01.58:114][413]LogEditorActor: Deleted Actor: Projectile_BP_C
-[2017.05.08-17.01.58:136][413]LogEditorActor: Deleted 1 Actors (0.022 secs)
-[2017.05.08-17.02.02:263][690]LogSavePackage: Save=815.69ms
-[2017.05.08-17.02.02:263][690]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround1D084E5340785CA172F9BDB27A828EDC.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap'
-[2017.05.08-17.02.02:272][690]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap
-[2017.05.08-17.02.02:306][690]LogFileHelpers: Saving map 'BattleGround' took 1.141
-[2017.05.08-17.13.39:203][870]Recompiling BattleTank...
-[2017.05.08-17.13.39:204][870]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 2598 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-17.13.39:256][870]Warning: Starting HotReload took  0.1s.
-[2017.05.08-17.14.27:007][722]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:14:27 AM
-[2017.05.08-17.14.27:007][722]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-17.14.27:007][722]CompilerResultsLog: Info Parsing headers for BattleTankEditor
-[2017.05.08-17.14.27:007][722]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 11.4802493 seconds
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info Performing 6 actions (4 in parallel)
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info BattleTank.generated.cpp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info TankAIController.cpp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info TankPlayerController.cpp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info Tank.cpp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info [5/6] Link UE4Editor-BattleTank-2598.dll
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info [6/6] Link UE4Editor-BattleTank-2598.lib
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2598.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2598.suppressed.exp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2598.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2598.exp
-[2017.05.08-17.14.27:008][722]CompilerResultsLog: Info Total build time: 46.72 seconds (Local executor: 12.26 seconds)
-[2017.05.08-17.14.27:008][722]LogMainFrame: MainFrame: Module compiling took 47.813 seconds
-[2017.05.08-17.14.27:201][722]LogClass: Could not find existing class Tank in package /Script/BattleTank for HotReload, assuming new class
-[2017.05.08-17.14.27:201][722]LogClass: Function Fire is new.
-[2017.05.08-17.14.27:201][722]LogClass: Function SetBarrelReference is new.
-[2017.05.08-17.14.27:201][722]LogClass: Function SetTurretReference is new.
-[2017.05.08-17.14.27:212][722]LogHotReload: Re-instancing Tank after hot-reload.
-[2017.05.08-17.14.28:132][722]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0201 seconds. Added 8 classes and 3 folders.
-[2017.05.08-17.14.28:136][722]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.05.08-17.14.29:957][722]LogContentBrowser: Native class hierarchy populated in 0.1458 seconds. Added 2255 classes and 460 folders.
-[2017.05.08-17.14.29:957][722]Display: HotReload took 50.8s.
-[2017.05.08-17.15.46:184][665]LogSavePackage: Save=759.30ms
-[2017.05.08-17.15.46:184][665]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround_Auto17498DEEA4F61F4B4D98A61AB50D80A87.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap'
-[2017.05.08-17.15.46:189][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap
-[2017.05.08-17.15.46:193][665]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/BattleGround' took 0.877
-[2017.05.08-17.15.46:193][665]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.877
-[2017.05.08-17.15.46:197][665]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Tank_BP] ([1] browsable assets)...
-[2017.05.08-17.15.46:216][665]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Tank_BP.Tank_BP]
-[2017.05.08-17.15.46:216][665]OBJ SavePackage: Finished generating thumbnails for package [/Game/Tank_BP]
-[2017.05.08-17.15.46:851][665]LogSavePackage: Save=41.72ms
-[2017.05.08-17.15.46:851][665]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Tank_BP_Auto15060B1B74F90AE9913E27E91D43093AE.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/Tank_BP_Auto1.uasset'
-[2017.05.08-17.15.46:853][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/Tank_BP_Auto1.uasset
-[2017.05.08-17.15.46:853][665]LogFileHelpers: Auto-saving content packages took 0.658
-[2017.05.08-17.18.55:610][732]Recompiling BattleTank...
-[2017.05.08-17.18.55:611][732]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6615 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-17.18.55:667][732]Warning: Starting HotReload took  0.1s.
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:19:24 AM
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Parsing headers for BattleTankEditor
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 7.1414659 seconds
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Performing 6 actions (4 in parallel)
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Tank.cpp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info TankPlayerController.cpp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info TankAIController.cpp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info BattleTank.generated.cpp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info [5/6] Link UE4Editor-BattleTank-6615.dll
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info [6/6] Link UE4Editor-BattleTank-6615.lib
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6615.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6615.suppressed.exp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6615.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6615.exp
-[2017.05.08-17.19.24:001][962]CompilerResultsLog: Info Total build time: 27.23 seconds (Local executor: 5.25 seconds)
-[2017.05.08-17.19.24:002][962]LogMainFrame: MainFrame: Module compiling took 28.401 seconds
-[2017.05.08-17.19.24:219][962]LogClass: Could not find existing class Tank in package /Script/BattleTank for HotReload, assuming new class
-[2017.05.08-17.19.24:219][962]LogClass: Function Fire is new.
-[2017.05.08-17.19.24:219][962]LogClass: Function SetBarrelReference is new.
-[2017.05.08-17.19.24:219][962]LogClass: Function SetTurretReference is new.
-[2017.05.08-17.19.24:230][962]LogHotReload: Re-instancing Tank after hot-reload.
-[2017.05.08-17.19.25:066][962]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0097 seconds. Added 8 classes and 3 folders.
-[2017.05.08-17.19.25:069][962]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.05.08-17.19.25:438][962]LogContentBrowser: Native class hierarchy populated in 0.0204 seconds. Added 2255 classes and 460 folders.
-[2017.05.08-17.19.25:438][962]Display: HotReload took 29.9s.
-[2017.05.08-17.19.30:265][ 93]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.05.08-17.19.42:184][498]BlueprintLog: New page: Compile Tank_BP
-[2017.05.08-17.19.42:760][520]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_BP" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset" SILENT=true
-[2017.05.08-17.19.42:826][520]LogSavePackage: Save=52.38ms
-[2017.05.08-17.19.42:826][520]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Tank_BP040A571F4E76D6A02B3958B6BB7BECC3.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset'
-[2017.05.08-17.19.42:837][520]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank_BP.uasset
-[2017.05.08-17.19.46:983][754]LogSavePackage: Save=992.01ms
-[2017.05.08-17.19.46:983][754]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/BattleGround74608C4A43D2A646003DD58A46373C2D.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap'
-[2017.05.08-17.19.46:984][754]LogFileManager:Warning: DeleteFile was unable to delete '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap', retrying in .5s...
-[2017.05.08-17.19.47:488][754]LogFileManager:Warning: DeleteFile recovered during retry!
-[2017.05.08-17.19.47:501][754]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap
-[2017.05.08-17.19.47:533][754]LogFileHelpers: Saving map 'BattleGround' took 1.969
-[2017.05.08-17.19.50:117][938]LogTemp: Repeting last play command: Selected Viewport
-[2017.05.08-17.19.50:150][938]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.19.50:150][938]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.05.08-17.19.50:150][938]PIE: New page: PIE session: BattleGround (May 8, 2017, 9:19:50 AM)
-[2017.05.08-17.19.50:150][938]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
-[2017.05.08-17.19.50:274][938]LogPlayLevel: PIE: StaticDuplicateObject took: (0.123154s)
-[2017.05.08-17.19.50:275][938]LogAIModule: Creating AISystem for world BattleGround
-[2017.05.08-17.19.50:275][938]LogPlayLevel: PIE: World Init took: (0.001120s)
-[2017.05.08-17.19.50:275][938]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.124632s)
-[2017.05.08-17.19.50:323][938]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.05.08-17.19.50:411][938]LogInit: FAudioDevice initialized.
-[2017.05.08-17.19.50:449][938]LogLoad: Game class is 'BattleTankGameMode_BP_C'
-[2017.05.08-17.19.50:458][938]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-13.19.50
-[2017.05.08-17.19.50:460][938]LogWorld: Bringing up level for play took: 0.009251
-[2017.05.08-17.19.50:464][938]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.19.50:464][938]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.19.50:464][938]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.19.50:465][938]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.19.50:465][938]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
-[2017.05.08-17.19.50:465][938]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.425
-[2017.05.08-17.19.50:466][938]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.19.51:824][ 32]LogSlate: Took 0.032815 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2017.05.08-17.19.52:612][ 97]LogTemp:Warning:  2.491974: Tank Fires
-[2017.05.08-17.19.53:304][161]LogTemp:Warning:  3.184201: Tank Fires
-[2017.05.08-17.19.53:645][191]LogTemp:Warning:  3.526084: Tank Fires
-[2017.05.08-17.19.59:819][728]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.19.59:875][728]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.23.19:977][215]Recompiling BattleTank...
-[2017.05.08-17.23.19:978][215]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9429 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-17.23.20:027][215]Warning: Starting HotReload took  0.1s.
-[2017.05.08-17.23.46:210][611]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:23:46 AM
-[2017.05.08-17.23.46:210][611]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-17.23.46:210][611]CompilerResultsLog: Info Parsing headers for BattleTankEditor
-[2017.05.08-17.23.46:210][611]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 7.2253497 seconds
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info Performing 6 actions (4 in parallel)
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info TankPlayerController.cpp
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info Tank.cpp
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info TankAIController.cpp
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info BattleTank.generated.cpp
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info [5/6] Link UE4Editor-BattleTank-9429.dll
-[2017.05.08-17.23.46:211][611]CompilerResultsLog: Info [6/6] Link UE4Editor-BattleTank-9429.lib
-[2017.05.08-17.23.46:212][611]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9429.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9429.suppressed.exp
-[2017.05.08-17.23.46:212][611]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9429.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9429.exp
-[2017.05.08-17.23.46:212][611]CompilerResultsLog: Info Total build time: 25.23 seconds (Local executor: 4.17 seconds)
-[2017.05.08-17.23.46:212][611]LogMainFrame: MainFrame: Module compiling took 26.244 seconds
-[2017.05.08-17.23.46:350][611]LogClass: Could not find existing class Tank in package /Script/BattleTank for HotReload, assuming new class
-[2017.05.08-17.23.46:350][611]LogClass: Function Fire is new.
-[2017.05.08-17.23.46:350][611]LogClass: Function SetBarrelReference is new.
-[2017.05.08-17.23.46:350][611]LogClass: Function SetTurretReference is new.
-[2017.05.08-17.23.46:363][611]LogHotReload: Re-instancing Tank after hot-reload.
-[2017.05.08-17.23.47:248][611]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0101 seconds. Added 8 classes and 3 folders.
-[2017.05.08-17.23.47:251][611]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2017.05.08-17.23.47:647][611]LogContentBrowser: Native class hierarchy populated in 0.0227 seconds. Added 2255 classes and 460 folders.
-[2017.05.08-17.23.47:648][611]Display: HotReload took 27.8s.
-[2017.05.08-17.25.24:881][264]LogRenderer: Reallocating scene render targets to support 1432x932 NumSamples 1 (Frame:95215).
-[2017.05.08-17.25.31:421][989]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/tank_fbx_Barrel" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset" SILENT=true
-[2017.05.08-17.25.31:455][989]LogSavePackage: Save=20.43ms
-[2017.05.08-17.25.31:455][989]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/tank_fbx_Barrel080EF56E42FCFD6ED65770A6FB72DB25.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset'
-[2017.05.08-17.25.31:464][989]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset
-[2017.05.08-17.29.55:700][655]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/BattleGround' took 0.024
-[2017.05.08-17.29.55:702][655]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Tank/tank_fbx_Barrel] ([1] browsable assets)...
-[2017.05.08-17.29.55:702][655]OBJ SavePackage: Finished generating thumbnails for package [/Game/Tank/tank_fbx_Barrel]
-[2017.05.08-17.29.55:719][655]LogSavePackage: Save=4.59ms
-[2017.05.08-17.29.55:719][655]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/tank_fbx_Barrel_Auto2333F148045B1BF731269479A22F3D64E.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/Tank/tank_fbx_Barrel_Auto2.uasset'
-[2017.05.08-17.29.55:733][655]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Autosaves/Game/Tank/tank_fbx_Barrel_Auto2.uasset
-[2017.05.08-17.29.55:734][655]LogFileHelpers: Auto-saving content packages took 0.033
-[2017.05.08-17.30.16:542][279]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/tank_fbx_Barrel" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset" SILENT=true
-[2017.05.08-17.30.16:562][279]LogSavePackage: Save=4.80ms
-[2017.05.08-17.30.16:562][279]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/tank_fbx_BarrelFC7EC24F4A179091A479A2A58DE853C0.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset'
-[2017.05.08-17.30.16:569][279]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset
-[2017.05.08-17.30.18:953][481]Recompiling BattleTank...
-[2017.05.08-17.30.18:954][481]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 7389 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-17.30.19:058][481]Warning: Starting HotReload took  0.1s.
-[2017.05.08-17.30.36:307][661]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:30:36 AM
-[2017.05.08-17.30.36:307][661]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-17.30.36:307][661]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
-[2017.05.08-17.30.36:307][661]CompilerResultsLog: Info Tank.cpp
-[2017.05.08-17.30.36:307][661]CompilerResultsLog:Error: Error C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Source\BattleTank\Private\Tank.cpp(66) : error C2143: syntax error: missing ';' before '}'
-[2017.05.08-17.30.36:308][661]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Binaries\Win64\UE4Editor-BattleTank-7389.dll
-[2017.05.08-17.30.36:308][661]CompilerResultsLog: Info Total build time: 15.74 seconds (Local executor: 0.00 seconds)
-[2017.05.08-17.30.36:308][661]LogMainFrame: MainFrame: Module compiling took 17.364 seconds
-[2017.05.08-17.30.36:308][661]Warning: HotReload failed, recompile failed
-[2017.05.08-17.32.01:372][289]Recompiling BattleTank...
-[2017.05.08-17.32.01:373][289]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3212 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
-[2017.05.08-17.32.01:425][289]Warning: Starting HotReload took  0.1s.
-[2017.05.08-17.32.16:538][557]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:32:16 AM
-[2017.05.08-17.32.16:538][557]CompilerResultsLog: Info Compiling game modules for hot reload
-[2017.05.08-17.32.16:538][557]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
-[2017.05.08-17.32.16:538][557]CompilerResultsLog: Info Tank.cpp
-[2017.05.08-17.32.16:538][557]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-3212.dll
-[2017.05.08-17.32.16:539][557]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-3212.lib
-[2017.05.08-17.32.16:539][557]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3212.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3212.suppressed.exp
-[2017.05.08-17.32.16:539][557]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3212.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3212.exp
-[2017.05.08-17.32.16:539][557]CompilerResultsLog: Info Total build time: 14.29 seconds (Local executor: 2.76 seconds)
-[2017.05.08-17.32.16:540][557]LogMainFrame: MainFrame: Module compiling took 15.176 seconds
-[2017.05.08-17.32.16:700][557]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0095 seconds. Added 8 classes and 3 folders.
-[2017.05.08-17.32.16:703][557]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
-[2017.05.08-17.32.17:073][557]LogContentBrowser: Native class hierarchy populated in 0.0182 seconds. Added 2255 classes and 460 folders.
-[2017.05.08-17.32.17:073][557]Display: HotReload took 15.7s.
-[2017.05.08-17.33.01:423][691]LogTemp: Repeting last play command: Selected Viewport
-[2017.05.08-17.33.01:442][691]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.33.01:443][691]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.05.08-17.33.01:443][691]PIE: New page: PIE session: BattleGround (May 8, 2017, 9:33:01 AM)
-[2017.05.08-17.33.01:444][691]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
-[2017.05.08-17.33.01:531][691]LogPlayLevel: PIE: StaticDuplicateObject took: (0.086918s)
-[2017.05.08-17.33.01:531][691]LogAIModule: Creating AISystem for world BattleGround
-[2017.05.08-17.33.01:532][691]LogPlayLevel: PIE: World Init took: (0.001033s)
-[2017.05.08-17.33.01:532][691]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.088470s)
-[2017.05.08-17.33.01:596][691]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.05.08-17.33.01:639][691]LogInit: FAudioDevice initialized.
-[2017.05.08-17.33.01:672][691]LogLoad: Game class is 'BattleTankGameMode_BP_C'
-[2017.05.08-17.33.01:680][691]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-13.33.01
-[2017.05.08-17.33.01:681][691]LogWorld: Bringing up level for play took: 0.008053
-[2017.05.08-17.33.01:684][691]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.33.01:684][691]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.33.01:684][691]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.33.01:684][691]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
-[2017.05.08-17.33.01:685][691]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
-[2017.05.08-17.33.01:685][691]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.795
-[2017.05.08-17.33.01:685][691]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.33.02:328][734]LogTemp:Warning:  1.235149: Tank Fires
-[2017.05.08-17.33.03:327][839]LogTemp:Warning:  2.236122: Tank Fires
-[2017.05.08-17.33.04:628][939]LogTemp:Warning:  3.536217: Tank Fires
-[2017.05.08-17.33.06:361][ 54]LogTemp:Warning:  5.268773: Tank Fires
-[2017.05.08-17.33.08:197][210]LogTemp:Warning:  7.107195: Tank Fires
-[2017.05.08-17.33.10:137][404]LogTemp:Warning:  9.047260: Tank Fires
-[2017.05.08-17.33.11:577][571]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.33.11:624][571]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
-[2017.05.08-17.33.20:639][474]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2017.05.08-17.33.20:732][474]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.05.08-17.33.21:024][475]Cmd: QUIT_EDITOR
-[2017.05.08-17.33.21:534][475]LogExit: Preparing to exit.
-[2017.05.08-17.33.22:598][475]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' was aborted.
-[2017.05.08-17.33.22:960][475]LogExit: Editor shut down
-[2017.05.08-17.33.22:962][475]LogExit: Transaction tracking system shut down
-[2017.05.08-17.33.23:232][475]LogObj: Freed 0b from 0 cluster array pools.
-[2017.05.08-17.33.23:233][475]LogExit: Object subsystem successfully closed.
-[2017.05.08-17.33.23:298][475]LogD3D11RHI: Shutdown
-[2017.05.08-17.33.23:298][475]LogD3D11RHI: CleanupD3DDevice
-[2017.05.08-17.33.23:437][475]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module BattleTank (513)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (512)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (507)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
-[2017.05.08-17.33.23:533][475]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
-[2017.05.08-17.33.23:534][475]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
-[2017.05.08-17.33.23:538][475]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
-[2017.05.08-17.33.23:538][475]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
-[2017.05.08-17.33.23:538][475]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
-[2017.05.08-17.33.23:539][475]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Collections/' was aborted.
-[2017.05.08-17.33.23:539][475]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Developers/Ziggy/Collections/' was aborted.
-[2017.05.08-17.33.23:539][475]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Collections/' was aborted.
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module BspMode (472)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module Media (445)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module SessionServices (432)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
-[2017.05.08-17.33.23:540][475]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
-[2017.05.08-17.33.23:541][475]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module MergeActors (402)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module SizeMap (400)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module TreeMap (398)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module XmlParser (382)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module Blutility (380)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
-[2017.05.08-17.33.24:524][475]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
-[2017.05.08-17.33.24:525][475]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module AutomationController (360)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module Layers (356)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module Persona (348)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
-[2017.05.08-17.33.24:578][475]LogModuleManager: Shutting down and abandoning module Kismet (344)
-[2017.05.08-17.33.24:599][475]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
-[2017.05.08-17.33.24:599][475]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module Toolbox (338)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module OutputLog (332)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module GammaUI (330)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module Documentation (328)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module Niagara (326)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module PortalServices (320)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module AIModule (314)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
-[2017.05.08-17.33.24:601][475]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SteamVR (302)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module OculusInput (294)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module CableComponent (288)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
-[2017.05.08-17.33.24:753][475]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module SourceControl (247)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
-[2017.05.08-17.33.24:754][475]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
-[2017.05.08-17.33.24:756][475]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
-[2017.05.08-17.33.24:756][475]LogModuleManager: Shutting down and abandoning module MainFrame (232)
-[2017.05.08-17.33.24:756][475]LogModuleManager: Shutting down and abandoning module HotReload (231)
-[2017.05.08-17.33.24:756][475]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Binaries/Win64' was aborted.
-[2017.05.08-17.33.24:757][475]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
-[2017.05.08-17.33.24:758][475]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
-[2017.05.08-17.33.24:759][475]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
-[2017.05.08-17.33.24:759][475]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
-[2017.05.08-17.33.24:759][475]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
-[2017.05.08-17.33.24:859][475]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module Paper2D (204)
-[2017.05.08-17.33.24:964][475]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
-[2017.05.08-17.33.24:965][475]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module MfMedia (198)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module VREditor (192)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module UMG (182)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module Sequencer (180)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module AssetTools (178)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module MessageLog (177)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module Slate (168)
-[2017.05.08-17.33.24:972][475]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module Networking (158)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module Core (154)
-[2017.05.08-17.33.25:005][475]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
-[2017.05.08-17.33.25:349][475]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.05.08-17.33.25:349][475]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' was aborted.
-[2017.05.08-17.33.25:349][475]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.05.08-17.33.25:350][475]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
-[2017.05.08-17.33.25:355][475]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
-[2017.05.08-17.33.25:356][475]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
-[2017.05.08-17.33.25:428][475]LogDerivedDataCache: Shutdown
-[2017.05.08-17.33.25:429][475]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
-[2017.05.08-17.33.25:430][475]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
-[2017.05.08-17.33.25:431][475]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
-[2017.05.08-17.33.25:431][475]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module Messaging (93)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
-[2017.05.08-17.33.25:433][475]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
-[2017.05.08-17.33.25:435][475]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
-[2017.05.08-17.33.25:437][475]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
-[2017.05.08-17.33.25:439][475]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
-[2017.05.08-17.33.25:439][475]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
-[2017.05.08-17.33.25:439][475]LogModuleManager: Shutting down and abandoning module InputCore (52)
-[2017.05.08-17.33.25:439][475]LogModuleManager: Shutting down and abandoning module Settings (50)
-[2017.05.08-17.33.25:439][475]LogModuleManager: Shutting down and abandoning module OculusRift (48)
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module GearVR (46)
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
-[2017.05.08-17.33.25:440][475]LogOnline:Display: Unloading online subsystem: NULL
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module XMPP (37)
-[2017.05.08-17.33.25:440][475]LogModuleManager: Shutting down and abandoning module HTTP (35)
-[2017.05.08-17.33.25:440][475]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.05.08-17.33.25:440][475]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B66B72574-4C3C-6978-F18A-AFB43C51103A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=24e04b4b428b8b44212f0d8344e6abf2%7C632015b1da4f41bc982c9d55f1bc8027%7C8e479c36-66ca-4b09-a4cf-be8e95aa911c&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.05.08-17.33.25:479][475]LogModuleManager: Shutting down and abandoning module SSL (34)
-[2017.05.08-17.33.25:481][475]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
-[2017.05.08-17.33.25:481][475]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
-[2017.05.08-17.33.25:481][475]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
-[2017.05.08-17.33.25:481][475]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2017.05.08-17.33.25:481][475]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module Renderer (14)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module Engine (12)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.05.08-17.33.25:497][475]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.05.08-17.33.25:501][475]LogExit: Exiting.
-[2017.05.08-17.33.25:548][475]Log file closed, 05/08/17 13:33:25
+[2017.05.08-17.40.41:810][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.08-17.40.41:810][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.08-17.40.41:901][  0]LogInit: Computer: ZIGGY-PC
+[2017.05.08-17.40.41:901][  0]LogInit: User: Ziggy
+[2017.05.08-17.40.41:901][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.08-17.40.41:901][  0]LogInit: High frequency timer resolution =3.613392 MHz
+[2017.05.08-17.40.41:902][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.05.08-17.40.41:902][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.08-17.40.41:902][  0]LogMemory: Process Physical Memory: 263.08 MB used, 263.08 MB peak
+[2017.05.08-17.40.41:902][  0]LogMemory: Process Virtual Memory: 262.78 MB used, 262.78 MB peak
+[2017.05.08-17.40.41:902][  0]LogMemory: Physical Memory: 7702.05 MB used,  8601.21 MB free, 16303.26 MB total
+[2017.05.08-17.40.41:902][  0]LogMemory: Virtual Memory: 630.74 MB used,  8601.21 MB free, 134217728.00 MB total
+[2017.05.08-17.40.42:108][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.05.08-17.40.43:970][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.08-17.40.45:124][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 780' (Feature Level 11_0)
+[2017.05.08-17.40.45:125][  0]LogD3D11RHI:       3039/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.05.08-17.40.45:129][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.08-17.40.45:129][  0]LogD3D11RHI:       0/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.08-17.40.45:129][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.08-17.40.45:247][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.08-17.40.45:247][  0]LogD3D11RHI:     GPU DeviceId: 0x1004 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.08-17.40.45:247][  0]LogWindows: EnumDisplayDevices:
+[2017.05.08-17.40.45:247][  0]LogWindows:    0. 'NVIDIA GeForce GTX 780' (P:0 D:1)
+[2017.05.08-17.40.45:248][  0]LogWindows:    1. 'NVIDIA GeForce GTX 780' (P:1 D:1)
+[2017.05.08-17.40.45:248][  0]LogWindows:    2. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2017.05.08-17.40.45:248][  0]LogWindows:    3. 'NVIDIA GeForce GTX 780' (P:0 D:0)
+[2017.05.08-17.40.45:248][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.05.08-17.40.45:248][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 780
+[2017.05.08-17.40.45:248][  0]LogD3D11RHI:   Driver Version: 381.89 (internal:22.21.13.8189, unified:381.89)
+[2017.05.08-17.40.45:248][  0]LogD3D11RHI:      Driver Date: 4-19-2017
+[2017.05.08-17.40.45:248][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.08-17.40.46:178][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.05.08-17.40.46:179][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.08-17.40.46:290][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.05.08-17.40.46:392][  0]LogShaderCompilers: Guid format shader working directory is -47 characters bigger than the processId version (../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Intermediate/Shaders/WorkingDirectory/275452/).
+[2017.05.08-17.40.46:393][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ziggy/AppData/Local/Temp/UnrealShaderWorkingDir/BFC232F1447FA5540D3071AEEEC643AA/'.
+[2017.05.08-17.40.46:393][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.08-17.40.48:471][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.08-17.40.48:604][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.08-17.40.48:749][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.08-17.40.48:879][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.08-17.40.49:009][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.08-17.40.49:148][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.08-17.40.49:287][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.08-17.40.49:431][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.08-17.40.49:544][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.08-17.40.49:709][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.08-17.40.49:836][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.08-17.40.49:957][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.08-17.40.50:084][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.08-17.40.50:218][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.08-17.40.50:348][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.08-17.40.50:612][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.08-17.40.50:612][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.08-17.40.50:738][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.08-17.40.50:939][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.08-17.40.51:003][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.08-17.40.51:135][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.08-17.40.51:278][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.08-17.40.51:408][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.08-17.40.51:532][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.08-17.40.51:532][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.08-17.40.52:483][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache: Loaded boot cache 0.06s 50MB C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.08-17.40.52:542][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.08-17.40.52:565][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.08-17.40.52:579][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ziggy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.08-17.40.52:589][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.08-17.40.52:591][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.08-17.40.52:591][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.08-17.40.53:168][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.08-17.40.53:172][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.08-17.40.53:575][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.08-17.40.53:703][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.08-17.40.53:860][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.08-17.40.53:860][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.08-17.40.53:860][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.08-17.40.54:730][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.05.08-17.40.54:794][  0]LogAssetRegistry: FAssetRegistry took 0.0220 seconds to start up
+[2017.05.08-17.40.54:908][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.077707 seconds
+[2017.05.08-17.40.54:914][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.08-17.40.54:914][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.08-17.40.54:914][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.08-17.40.55:010][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.08-17.40.59:880][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.08-17.40.59:976][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.08-17.41.01:572][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.08-17.41.02:682][  0]SourceControl: Info Source control is disabled
+[2017.05.08-17.41.03:165][  0]SourceControl: Info Source control is disabled
+[2017.05.08-17.41.03:296][  0]SourceControl: Info Source control is disabled
+[2017.05.08-17.41.03:424][  0]SourceControl: Info Source control is disabled
+[2017.05.08-17.41.06:655][  0]LogEngine: Initializing Engine...
+[2017.05.08-17.41.06:656][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.08-17.41.07:087][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.08-17.41.07:105][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-17.41.07:149][  0]LogInit: FAudioDevice initialized.
+[2017.05.08-17.41.07:177][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Ziggy/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.08-17.41.07:181][  0]LogInit: Texture streaming: Enabled
+[2017.05.08-17.41.07:326][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.08-17.41.07:601][  0]LogInit: Transaction tracking system initialized
+[2017.05.08-17.41.08:493][  0]BlueprintLog: New page: Editor Load
+[2017.05.08-17.41.10:526][  0]LocalizationService: Info Localization service is disabled
+[2017.05.08-17.41.12:106][  0]LogConsoleResponse:Display: 
+[2017.05.08-17.41.12:309][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.08-17.41.12:309][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.08-17.41.13:020][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' took 0.01s
+[2017.05.08-17.41.15:610][  0]SourceControl: Info Source control is disabled
+[2017.05.08-17.41.15:610][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.08-17.41.15:612][  0]LightingResults: New page: Lighting Build
+[2017.05.08-17.41.15:749][  0]MapCheck: New page: Map Check
+[2017.05.08-17.41.15:749][  0]LightingResults: New page: Lighting Build
+[2017.05.08-17.41.16:429][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-17.41.16:638][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.08-17.41.16:638][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.08-17.41.16:914][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 275.531ms to complete.
+[2017.05.08-17.41.16:914][  0]LogFileHelpers: Loading map 'BattleGround' took 1.304
+[2017.05.08-17.41.17:169][  0]LogCollectionManager: Loaded 0 collections in 0.003401 seconds
+[2017.05.08-17.41.17:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Collections/' took 0.01s
+[2017.05.08-17.41.17:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Developers/Ziggy/Collections/' took 0.01s
+[2017.05.08-17.41.17:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Collections/' took 0.01s
+[2017.05.08-17.41.17:343][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.05.08-17.41.17:369][  0]LogContentBrowser: Native class hierarchy populated in 0.0251 seconds. Added 2253 classes and 456 folders.
+[2017.05.08-17.41.17:374][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.08-17.41.17:374][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.08-17.41.17:612][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0107 seconds. Added 0 classes and 0 folders.
+[2017.05.08-17.41.17:794][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0144 seconds. Added 0 classes and 0 folders.
+[2017.05.08-17.41.17:944][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0121 seconds. Added 1 classes and 2 folders.
+[2017.05.08-17.41.18:252][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.08-17.41.18:261][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.08-17.41.18:441][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0115 seconds. Added 1 classes and 2 folders.
+[2017.05.08-17.41.18:441][  0]LogLoad: (Engine Initialization) Total time: 42.31 seconds
+[2017.05.08-17.41.18:441][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.22 seconds
+[2017.05.08-17.41.18:441][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.08-17.41.18:441][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.08-17.41.18:452][  0]LogOcInput: OculusInput pre-init called
+[2017.05.08-17.41.18:480][  0]LogContentStreaming: Texture pool size now 800 MB
+[2017.05.08-17.41.18:482][  0]LogSlate: Took 0.000483 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.08-17.41.18:486][  0]LogSlate: Took 0.000435 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.08-17.41.18:494][  0]LogSlate: Took 0.000381 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.08-17.41.18:649][  0]LogSlate: Took 0.000432 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-17.41.18:710][  0]LogRenderer: Reallocating scene render targets to support 996x588 NumSamples 1 (Frame:2).
+[2017.05.08-17.41.18:820][  1]LogAssetRegistry: Asset discovery search completed in 24.0484 seconds
+[2017.05.08-17.41.18:820][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
+[2017.05.08-17.41.18:820][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
+[2017.05.08-17.41.19:474][ 54]LogSlate: Took 0.000423 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-17.42.05:634][ 85]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-17.42.05:647][ 85]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.42.05:648][ 85]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-17.42.05:648][ 85]PIE: New page: PIE session: BattleGround (May 8, 2017, 9:42:05 AM)
+[2017.05.08-17.42.05:648][ 85]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-17.42.05:734][ 85]LogPlayLevel: PIE: StaticDuplicateObject took: (0.086461s)
+[2017.05.08-17.42.05:735][ 85]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-17.42.05:735][ 85]LogPlayLevel: PIE: World Init took: (0.000866s)
+[2017.05.08-17.42.05:736][ 85]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.087666s)
+[2017.05.08-17.42.05:762][ 85]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-17.42.05:803][ 85]LogInit: FAudioDevice initialized.
+[2017.05.08-17.42.05:886][ 85]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-17.42.05:892][ 85]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-13.42.05
+[2017.05.08-17.42.05:893][ 85]LogWorld: Bringing up level for play took: 0.006377
+[2017.05.08-17.42.06:008][ 85]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0103 seconds. Added 11 classes and 0 folders.
+[2017.05.08-17.42.06:011][ 85]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.42.06:011][ 85]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.42.06:011][ 85]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.42.06:011][ 85]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.42.06:011][ 85]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-17.42.06:012][ 85]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 1.122
+[2017.05.08-17.42.06:012][ 85]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.42.06:511][113]LogTemp:Warning:  1.193139: Tank Fires
+[2017.05.08-17.42.06:965][163]LogTemp:Warning:  1.648207: Tank Fires
+[2017.05.08-17.42.07:245][195]LogTemp:Warning:  1.926965: Tank Fires
+[2017.05.08-17.42.07:476][221]LogTemp:Warning:  2.158458: Tank Fires
+[2017.05.08-17.42.07:692][244]LogTemp:Warning:  2.374727: Tank Fires
+[2017.05.08-17.42.07:921][264]LogTemp:Warning:  2.603174: Tank Fires
+[2017.05.08-17.42.08:114][282]LogTemp:Warning:  2.796658: Tank Fires
+[2017.05.08-17.42.08:314][299]LogTemp:Warning:  2.996372: Tank Fires
+[2017.05.08-17.42.09:817][407]LogTemp:Warning:  4.497946: Tank Fires
+[2017.05.08-17.42.12:791][682]LogTemp:Warning:  7.473571: Tank Fires
+[2017.05.08-17.42.12:991][701]LogTemp:Warning:  7.673147: Tank Fires
+[2017.05.08-17.42.13:192][719]LogTemp:Warning:  7.873842: Tank Fires
+[2017.05.08-17.42.13:407][736]LogTemp:Warning:  8.088784: Tank Fires
+[2017.05.08-17.42.13:624][754]LogTemp:Warning:  8.305824: Tank Fires
+[2017.05.08-17.42.14:187][813]LogTemp:Warning:  8.869323: Tank Fires
+[2017.05.08-17.42.14:677][870]LogTemp:Warning:  9.359677: Tank Fires
+[2017.05.08-17.42.16:806][120]LogTemp:Warning:  11.488859: Tank Fires
+[2017.05.08-17.42.17:043][147]LogTemp:Warning:  11.726206: Tank Fires
+[2017.05.08-17.42.22:182][661]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.42.22:229][661]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.42.31:578][597]LogSlate: Took 0.000284 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-17.42.32:275][597]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0093 seconds. Added 112 classes and 0 folders.
+[2017.05.08-17.42.33:088][597]LogSlate: Took 0.000290 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.08-17.42.33:186][597]LogSlate: Took 0.000400 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.08-17.43.16:098][831]LogSlate: Took 0.000401 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.08-17.43.36:428][865]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Source/BattleTank/Public/Tank.h'
+[2017.05.08-17.43.36:446][865]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Source/BattleTank/Private/Tank.cpp'
+[2017.05.08-17.50.37:503][316]Recompiling BattleTank...
+[2017.05.08-17.50.37:503][316]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3559 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.05.08-17.50.37:583][316]Warning: Starting HotReload took  0.2s.
+[2017.05.08-17.51.08:026][484]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:51:08 AM
+[2017.05.08-17.51.08:027][484]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.08-17.51.08:027][484]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.05.08-17.51.08:027][484]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.05.08-17.51.08:027][484]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 9.7730298 seconds
+[2017.05.08-17.51.08:027][484]CompilerResultsLog: Info Performing 5 actions (4 in parallel)
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info Projectile.cpp
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info Tank.cpp
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info [4/5] Link UE4Editor-BattleTank-3559.dll
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info [5/5] Link UE4Editor-BattleTank-3559.lib
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3559.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3559.suppressed.exp
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3559.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3559.exp
+[2017.05.08-17.51.08:030][484]CompilerResultsLog: Info Total build time: 29.45 seconds (Local executor: 5.91 seconds)
+[2017.05.08-17.51.08:031][484]LogMainFrame: MainFrame: Module compiling took 30.538 seconds
+[2017.05.08-17.51.08:583][484]LogClass: Could not find existing class Projectile in package /Script/BattleTank for HotReload, assuming new class
+[2017.05.08-17.51.08:601][484]LogHotReload: Re-instancing Projectile after hot-reload.
+[2017.05.08-17.51.09:087][484]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0159 seconds. Added 8 classes and 3 folders.
+[2017.05.08-17.51.09:089][484]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.05.08-17.51.09:652][484]LogContentBrowser: Native class hierarchy populated in 0.0263 seconds. Added 2255 classes and 460 folders.
+[2017.05.08-17.51.09:992][484]Display: HotReload took 32.6s.
+[2017.05.08-17.51.51:797][278]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-17.51.51:825][278]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.51.51:825][278]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-17.51.51:825][278]PIE: New page: PIE session: BattleGround (May 8, 2017, 9:51:51 AM)
+[2017.05.08-17.51.51:825][278]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-17.51.51:938][278]LogPlayLevel: PIE: StaticDuplicateObject took: (0.112624s)
+[2017.05.08-17.51.51:939][278]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-17.51.51:939][278]LogPlayLevel: PIE: World Init took: (0.001265s)
+[2017.05.08-17.51.51:939][278]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.114260s)
+[2017.05.08-17.51.52:035][278]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-17.51.52:077][278]LogInit: FAudioDevice initialized.
+[2017.05.08-17.51.52:110][278]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-17.51.52:117][278]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-13.51.52
+[2017.05.08-17.51.52:118][278]LogWorld: Bringing up level for play took: 0.007371
+[2017.05.08-17.51.52:121][278]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.51.52:121][278]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.51.52:121][278]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.51.52:121][278]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-17.51.52:121][278]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-17.51.52:122][278]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 1.231
+[2017.05.08-17.51.52:122][278]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.51.52:709][343]LogTemp:Warning:  0.917172: Tank Fires
+[2017.05.08-17.51.54:513][549]LogTemp:Warning:  2.723555: Tank Fires
+[2017.05.08-17.51.56:799][812]LogTemp:Warning:  5.009433: Tank Fires
+[2017.05.08-17.52.00:279][218]LogTemp:Warning:  8.489038: Tank Fires
+[2017.05.08-17.52.00:853][286]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.52.00:896][286]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-17.57.32:521][119]Recompiling BattleTank...
+[2017.05.08-17.57.32:522][119]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6184 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.05.08-17.57.32:575][119]Warning: Starting HotReload took  0.1s.
+[2017.05.08-17.58.13:473][486]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:58:13 AM
+[2017.05.08-17.58.13:473][486]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.08-17.58.13:473][486]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.05.08-17.58.13:473][486]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\BattleTank.uproject" "C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 10.7383331 seconds
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info Performing 5 actions (4 in parallel)
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info Projectile.cpp
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info Tank.cpp
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info [4/5] Link UE4Editor-BattleTank-6184.dll
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info [5/5] Link UE4Editor-BattleTank-6184.lib
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6184.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6184.suppressed.exp
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6184.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6184.exp
+[2017.05.08-17.58.13:474][486]CompilerResultsLog: Info Total build time: 40.05 seconds (Local executor: 13.19 seconds)
+[2017.05.08-17.58.13:474][486]LogMainFrame: MainFrame: Module compiling took 40.962 seconds
+[2017.05.08-17.58.13:730][486]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0138 seconds. Added 8 classes and 3 folders.
+[2017.05.08-17.58.13:733][486]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.05.08-17.58.14:087][486]LogContentBrowser: Native class hierarchy populated in 0.0200 seconds. Added 2255 classes and 460 folders.
+[2017.05.08-17.58.14:087][486]Display: HotReload took 41.6s.
+[2017.05.08-17.59.13:210][755]Recompiling BattleTank...
+[2017.05.08-17.59.13:211][755]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4153 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.05.08-17.59.13:271][755]Warning: Starting HotReload took  0.1s.
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: New page: Compilation - May 8, 2017, 9:59:29 AM
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info Tank.cpp
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info Projectile.cpp
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-4153.dll
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-4153.lib
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4153.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4153.suppressed.exp
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4153.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4153.exp
+[2017.05.08-17.59.29:510][324]CompilerResultsLog: Info Total build time: 15.67 seconds (Local executor: 3.07 seconds)
+[2017.05.08-17.59.29:510][324]LogMainFrame: MainFrame: Module compiling took 16.309 seconds
+[2017.05.08-17.59.29:688][324]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0094 seconds. Added 8 classes and 3 folders.
+[2017.05.08-17.59.29:691][324]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.05.08-17.59.30:042][324]LogContentBrowser: Native class hierarchy populated in 0.0214 seconds. Added 2255 classes and 460 folders.
+[2017.05.08-17.59.30:042][324]Display: HotReload took 16.9s.
+[2017.05.08-18.00.54:409][163]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.00.54:433][163]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.00.54:433][163]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.00.54:433][163]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:00:54 AM)
+[2017.05.08-18.00.54:433][163]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.00.54:534][163]LogPlayLevel: PIE: StaticDuplicateObject took: (0.100790s)
+[2017.05.08-18.00.54:535][163]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.00.54:535][163]LogPlayLevel: PIE: World Init took: (0.001252s)
+[2017.05.08-18.00.54:536][163]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.102351s)
+[2017.05.08-18.00.54:601][163]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.00.54:641][163]LogInit: FAudioDevice initialized.
+[2017.05.08-18.00.54:673][163]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.00.54:680][163]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.00.54
+[2017.05.08-18.00.54:681][163]LogWorld: Bringing up level for play took: 0.006606
+[2017.05.08-18.00.54:684][163]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.00.54:684][163]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.00.54:684][163]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.00.54:684][163]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.00.54:684][163]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.00.54:684][163]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.206
+[2017.05.08-18.00.54:684][163]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.00.55:411][229]LogTemp:Warning:  1.333879: Projectile Fires at 30000.000000 
+[2017.05.08-18.00.56:407][342]LogTemp:Warning:  2.330784: Projectile Fires at 30000.000000 
+[2017.05.08-18.00.58:084][477]LogTemp:Warning:  4.007049: Projectile Fires at 30000.000000 
+[2017.05.08-18.01.01:688][810]LogTemp:Warning:  7.611861: Projectile Fires at 30000.000000 
+[2017.05.08-18.01.04:428][103]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.01.04:470][103]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.01.11:929][959]LogSlate: Took 0.000383 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.05.08-18.06.29:258][972]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.06.29:276][972]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.06.29:276][972]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.06.29:276][972]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:06:29 AM)
+[2017.05.08-18.06.29:277][972]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.06.29:362][972]LogPlayLevel: PIE: StaticDuplicateObject took: (0.084880s)
+[2017.05.08-18.06.29:362][972]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.06.29:363][972]LogPlayLevel: PIE: World Init took: (0.000992s)
+[2017.05.08-18.06.29:363][972]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.086421s)
+[2017.05.08-18.06.29:393][972]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.06.29:436][972]LogInit: FAudioDevice initialized.
+[2017.05.08-18.06.29:466][972]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.06.29:473][972]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.06.29
+[2017.05.08-18.06.29:474][972]LogWorld: Bringing up level for play took: 0.006512
+[2017.05.08-18.06.29:477][972]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.06.29:477][972]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.06.29:477][972]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.06.29:478][972]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.06.29:478][972]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.06.29:479][972]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.589
+[2017.05.08-18.06.29:479][972]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.06.29:887][ 15]LogTemp:Warning:  0.633221: Projectile Fires at 30000.000000 
+[2017.05.08-18.06.31:790][188]LogTemp:Warning:  2.537761: Projectile Fires at 30000.000000 
+[2017.05.08-18.06.33:718][372]LogTemp:Warning:  4.465948: Projectile Fires at 30000.000000 
+[2017.05.08-18.06.35:342][541]LogTemp:Warning:  6.089924: Projectile Fires at 30000.000000 
+[2017.05.08-18.06.38:439][901]LogTemp:Warning:  9.187122: Projectile Fires at 30000.000000 
+[2017.05.08-18.06.40:282][122]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.06.40:323][122]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.07.29:205][623]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.07.29:223][623]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.07.29:224][623]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.07.29:224][623]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:07:29 AM)
+[2017.05.08-18.07.29:224][623]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.07.29:310][623]LogPlayLevel: PIE: StaticDuplicateObject took: (0.085237s)
+[2017.05.08-18.07.29:311][623]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.07.29:311][623]LogPlayLevel: PIE: World Init took: (0.001133s)
+[2017.05.08-18.07.29:311][623]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.087029s)
+[2017.05.08-18.07.29:345][623]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.07.29:389][623]LogInit: FAudioDevice initialized.
+[2017.05.08-18.07.29:423][623]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.07.29:430][623]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.07.29
+[2017.05.08-18.07.29:431][623]LogWorld: Bringing up level for play took: 0.006785
+[2017.05.08-18.07.29:433][623]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.07.29:433][623]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.07.29:434][623]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.07.29:434][623]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.07.29:434][623]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.07.29:434][623]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.544
+[2017.05.08-18.07.29:435][623]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.07.29:763][660]LogTemp:Warning:  0.562963: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.30:418][735]LogTemp:Warning:  1.219082: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.31:905][874]LogTemp:Warning:  2.705428: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.33:318][ 12]LogTemp:Warning:  4.118479: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.34:365][113]LogTemp:Warning:  5.165787: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.34:653][141]LogTemp:Warning:  5.453638: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.34:811][157]LogTemp:Warning:  5.612000: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.34:995][176]LogTemp:Warning:  5.795401: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.35:172][194]LogTemp:Warning:  5.972430: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.35:374][214]LogTemp:Warning:  6.175708: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.35:559][233]LogTemp:Warning:  6.359282: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.35:759][252]LogTemp:Warning:  6.559491: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.41:732][948]LogTemp:Warning:  12.533550: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.46:581][527]LogTemp:Warning:  17.382593: Projectile Fires at 30000.000000 
+[2017.05.08-18.07.47:749][667]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.07.47:797][667]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.20:965][ 85]LogVSAccessor:Warning: Couldn't get Visual Studio COM object
+[2017.05.08-18.09.20:965][ 85]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2017.05.08-18.09.20:974][ 85]Recompiling BattleTank...
+[2017.05.08-18.09.20:975][ 85]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3104 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.05.08-18.09.21:064][ 85]Warning: Starting HotReload took 15.5s.
+[2017.05.08-18.09.30:669][230]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.09.30:699][230]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.30:700][230]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.09.30:700][230]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:09:30 AM)
+[2017.05.08-18.09.30:700][230]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.09.30:813][230]LogPlayLevel: PIE: StaticDuplicateObject took: (0.112064s)
+[2017.05.08-18.09.30:814][230]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.09.30:814][230]LogPlayLevel: PIE: World Init took: (0.001211s)
+[2017.05.08-18.09.30:814][230]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.114022s)
+[2017.05.08-18.09.30:857][230]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.09.30:910][230]LogInit: FAudioDevice initialized.
+[2017.05.08-18.09.30:962][230]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.09.30:971][230]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.09.30
+[2017.05.08-18.09.30:973][230]LogWorld: Bringing up level for play took: 0.009350
+[2017.05.08-18.09.30:977][230]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.30:977][230]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.30:978][230]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.30:978][230]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.30:978][230]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.09.30:979][230]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.089
+[2017.05.08-18.09.30:979][230]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.31:695][278]LogTemp:Warning:  1.031244: Projectile Fires at 30000.000000 
+[2017.05.08-18.09.32:548][340]LogTemp:Warning:  1.886919: Projectile Fires at 30000.000000 
+[2017.05.08-18.09.33:485][410]LogTemp:Warning:  2.824059: Projectile Fires at 30000.000000 
+[2017.05.08-18.09.35:124][536]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.35:182][536]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.37:850][757]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.09.37:875][757]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.37:876][757]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.09.37:876][757]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:09:37 AM)
+[2017.05.08-18.09.37:877][757]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.09.37:983][757]LogPlayLevel: PIE: StaticDuplicateObject took: (0.106046s)
+[2017.05.08-18.09.37:984][757]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.09.37:984][757]LogPlayLevel: PIE: World Init took: (0.001272s)
+[2017.05.08-18.09.37:984][757]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.108021s)
+[2017.05.08-18.09.38:028][757]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.09.38:086][757]LogInit: FAudioDevice initialized.
+[2017.05.08-18.09.38:120][757]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.09.38:129][757]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.09.38
+[2017.05.08-18.09.38:131][757]LogWorld: Bringing up level for play took: 0.009388
+[2017.05.08-18.09.38:135][757]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.38:135][757]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.38:135][757]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.38:136][757]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.09.38:136][757]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.09.38:136][757]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 1.246
+[2017.05.08-18.09.38:137][757]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.39:463][860]LogTemp:Warning:  1.618957: Projectile Fires at 30000.000000 
+[2017.05.08-18.09.42:157][ 68]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.42:210][ 68]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.09.46:282][291]CompilerResultsLog: New page: Compilation - May 8, 2017, 10:09:46 AM
+[2017.05.08-18.09.46:285][291]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.08-18.09.46:288][291]CompilerResultsLog: Info Target is up to date
+[2017.05.08-18.09.46:288][291]CompilerResultsLog: Info Total build time: 23.96 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2017.05.08-18.09.46:289][291]LogMainFrame: MainFrame: Module compiling took 25.324 seconds
+[2017.05.08-18.09.47:246][291]LogContentBrowser: Native class hierarchy populated in 0.0338 seconds. Added 2255 classes and 460 folders.
+[2017.05.08-18.09.47:247][291]Display: HotReload took 41.7s.
+[2017.05.08-18.12.19:060][875]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.12.19:079][875]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.12.19:080][875]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.12.19:080][875]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:12:19 AM)
+[2017.05.08-18.12.19:080][875]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.12.19:164][875]LogPlayLevel: PIE: StaticDuplicateObject took: (0.083747s)
+[2017.05.08-18.12.19:165][875]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.12.19:165][875]LogPlayLevel: PIE: World Init took: (0.001360s)
+[2017.05.08-18.12.19:166][875]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.085656s)
+[2017.05.08-18.12.19:233][875]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.12.19:273][875]LogInit: FAudioDevice initialized.
+[2017.05.08-18.12.19:305][875]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.12.19:312][875]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.12.19
+[2017.05.08-18.12.19:313][875]LogWorld: Bringing up level for play took: 0.006807
+[2017.05.08-18.12.19:316][875]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.12.19:316][875]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.12.19:316][875]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.12.19:316][875]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.12.19:317][875]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.12.19:317][875]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.427
+[2017.05.08-18.12.19:318][875]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.12.19:997][951]LogTemp:Warning:  0.941500: Projectile Fires at 30000.000000 
+[2017.05.08-18.12.21:776][142]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.12.21:838][142]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.12.48:335][  4]LogRenderer: Reallocating scene render targets to support 1432x932 NumSamples 1 (Frame:33590).
+[2017.05.08-18.13.02:678][623]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/tank_fbx_Barrel" FILE="../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset" SILENT=true
+[2017.05.08-18.13.02:714][623]LogSavePackage: Save=18.30ms
+[2017.05.08-18.13.02:714][623]LogSavePackage: Moving '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/tank_fbx_Barrel20CB18EB48DC8CE97FB4A5BC131DEE87.tmp' to '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset'
+[2017.05.08-18.13.02:722][623]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Tank/tank_fbx_Barrel.uasset
+[2017.05.08-18.13.04:198][744]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.13.04:224][744]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.13.04:225][744]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.13.04:225][744]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:13:04 AM)
+[2017.05.08-18.13.04:225][744]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.13.04:336][744]LogPlayLevel: PIE: StaticDuplicateObject took: (0.110435s)
+[2017.05.08-18.13.04:337][744]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.13.04:337][744]LogPlayLevel: PIE: World Init took: (0.001398s)
+[2017.05.08-18.13.04:338][744]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.112623s)
+[2017.05.08-18.13.04:381][744]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.13.04:448][744]LogInit: FAudioDevice initialized.
+[2017.05.08-18.13.04:485][744]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.13.04:494][744]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.13.04
+[2017.05.08-18.13.04:496][744]LogWorld: Bringing up level for play took: 0.008763
+[2017.05.08-18.13.04:500][744]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.13.04:500][744]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.13.04:500][744]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.13.04:501][744]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.13.04:501][744]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.13.04:502][744]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.388
+[2017.05.08-18.13.04:502][744]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.13.04:850][771]LogTemp:Warning:  0.661349: Projectile Fires at 30000.000000 
+[2017.05.08-18.13.06:909][959]LogTemp:Warning:  2.722484: Projectile Fires at 30000.000000 
+[2017.05.08-18.13.07:952][ 81]LogTemp:Warning:  3.764807: Projectile Fires at 30000.000000 
+[2017.05.08-18.13.10:406][365]LogTemp:Warning:  6.219859: Projectile Fires at 30000.000000 
+[2017.05.08-18.13.11:476][485]LogTemp:Warning:  7.289057: Projectile Fires at 30000.000000 
+[2017.05.08-18.13.13:323][702]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.13.13:365][702]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.21.43:779][933]Recompiling BattleTank...
+[2017.05.08-18.21.43:780][933]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9165 Win64 Development -editorrecompile -canskiplink "C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/BattleTank.uproject" ]
+[2017.05.08-18.21.43:846][933]Warning: Starting HotReload took  0.1s.
+[2017.05.08-18.21.59:139][ 72]CompilerResultsLog: New page: Compilation - May 8, 2017, 10:21:59 AM
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info Tank.cpp
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-9165.dll
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-9165.lib
+[2017.05.08-18.21.59:140][ 72]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9165.suppressed.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9165.suppressed.exp
+[2017.05.08-18.21.59:141][ 72]CompilerResultsLog: Info    Creating library C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9165.lib and object C:\Users\Ziggy\Documents\SourceTreeRepositories\BattleTankProject\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9165.exp
+[2017.05.08-18.21.59:141][ 72]CompilerResultsLog: Info Total build time: 14.02 seconds (Local executor: 2.85 seconds)
+[2017.05.08-18.21.59:141][ 72]LogMainFrame: MainFrame: Module compiling took 15.371 seconds
+[2017.05.08-18.21.59:292][ 72]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0092 seconds. Added 8 classes and 3 folders.
+[2017.05.08-18.21.59:294][ 72]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2017.05.08-18.21.59:679][ 72]LogContentBrowser: Native class hierarchy populated in 0.0197 seconds. Added 2255 classes and 460 folders.
+[2017.05.08-18.21.59:679][ 72]Display: HotReload took 16.0s.
+[2017.05.08-18.22.03:084][ 83]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.08-18.22.03:108][ 83]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.22.03:109][ 83]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.08-18.22.03:109][ 83]PIE: New page: PIE session: BattleGround (May 8, 2017, 10:22:03 AM)
+[2017.05.08-18.22.03:109][ 83]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.05.08-18.22.03:216][ 83]LogPlayLevel: PIE: StaticDuplicateObject took: (0.107175s)
+[2017.05.08-18.22.03:217][ 83]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.08-18.22.03:218][ 83]LogPlayLevel: PIE: World Init took: (0.001341s)
+[2017.05.08-18.22.03:218][ 83]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.109178s)
+[2017.05.08-18.22.03:304][ 83]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-18.22.03:353][ 83]LogInit: FAudioDevice initialized.
+[2017.05.08-18.22.03:385][ 83]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.08-18.22.03:395][ 83]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.08-14.22.03
+[2017.05.08-18.22.03:396][ 83]LogWorld: Bringing up level for play took: 0.009703
+[2017.05.08-18.22.03:400][ 83]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.22.03:401][ 83]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.22.03:401][ 83]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.22.03:401][ 83]LogTemp:Warning: AI Controller found player Tank_BP_C_0 Bitch
+[2017.05.08-18.22.03:401][ 83]LogTemp:Warning: PlayerController is possesing Tank_BP_C_0 Bitch
+[2017.05.08-18.22.03:402][ 83]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.512
+[2017.05.08-18.22.03:402][ 83]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.22.03:706][104]LogTemp:Warning:  0.952053: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.04:757][186]LogTemp:Warning:  2.006013: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.05:496][247]LogTemp:Warning:  2.745827: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.06:250][312]LogTemp:Warning:  3.499470: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.08:257][505]LogTemp:Warning:  5.504833: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.09:852][647]LogTemp:Warning:  7.100336: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.12:245][915]LogTemp:Warning:  9.494609: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.12:688][967]LogTemp:Warning:  9.938074: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.17:051][455]LogTemp:Warning:  14.300672: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.17:663][527]LogTemp:Warning:  14.911664: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.17:934][557]LogTemp:Warning:  15.184002: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.24:887][334]LogTemp:Warning:  22.135885: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.26:542][516]LogTemp:Warning:  23.791628: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.26:925][561]LogTemp:Warning:  24.174343: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.27:280][600]LogTemp:Warning:  24.529085: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.30:684][970]LogTemp:Warning:  27.933249: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.30:979][  1]LogTemp:Warning:  28.228432: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.31:232][ 30]LogTemp:Warning:  28.480671: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.31:446][ 55]LogTemp:Warning:  28.695278: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.31:635][ 77]LogTemp:Warning:  28.883829: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.33:438][277]LogTemp:Warning:  30.686911: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.33:744][312]LogTemp:Warning:  30.993473: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.34:051][348]LogTemp:Warning:  31.300348: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.34:286][375]LogTemp:Warning:  31.536070: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.34:502][400]LogTemp:Warning:  31.751503: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.34:708][424]LogTemp:Warning:  31.957430: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.34:909][447]LogTemp:Warning:  32.158203: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.35:108][470]LogTemp:Warning:  32.357613: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.36:652][644]LogTemp:Warning:  33.901665: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.37:018][687]LogTemp:Warning:  34.267685: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.37:333][724]LogTemp:Warning:  34.582081: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.37:554][748]LogTemp:Warning:  34.802956: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.37:768][768]LogTemp:Warning:  35.016983: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.37:969][789]LogTemp:Warning:  35.218113: Projectile Fires at 30000.000000 
+[2017.05.08-18.22.38:671][868]LogProjectileMovement:Warning: Projectile_BP_C_0 is outside the world bounds!
+[2017.05.08-18.22.39:981][ 18]LogProjectileMovement:Warning: Projectile_BP_C_1 is outside the world bounds!
+[2017.05.08-18.22.40:127][ 35]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.22.40:169][ 35]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.08-18.23.05:326][909]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.08-18.23.05:531][909]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.08-18.23.05:785][910]Cmd: QUIT_EDITOR
+[2017.05.08-18.23.06:698][910]LogExit: Preparing to exit.
+[2017.05.08-18.23.07:097][910]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' was aborted.
+[2017.05.08-18.23.07:406][910]LogExit: Editor shut down
+[2017.05.08-18.23.07:407][910]LogExit: Transaction tracking system shut down
+[2017.05.08-18.23.07:694][910]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.08-18.23.07:695][910]LogExit: Object subsystem successfully closed.
+[2017.05.08-18.23.07:737][910]LogD3D11RHI: Shutdown
+[2017.05.08-18.23.07:737][910]LogD3D11RHI: CleanupD3DDevice
+[2017.05.08-18.23.07:888][910]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module BattleTank (512)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (511)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module BlueprintGraph (506)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (504)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (502)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
+[2017.05.08-18.23.07:995][910]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.05.08-18.23.07:995][910]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.08-18.23.08:000][910]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.05.08-18.23.08:001][910]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.05.08-18.23.08:001][910]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.05.08-18.23.08:001][910]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Collections/' was aborted.
+[2017.05.08-18.23.08:001][910]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/Developers/Ziggy/Collections/' was aborted.
+[2017.05.08-18.23.08:001][910]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Saved/Collections/' was aborted.
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module BspMode (472)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module Media (445)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module SessionServices (432)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
+[2017.05.08-18.23.08:002][910]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
+[2017.05.08-18.23.08:003][910]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module MergeActors (402)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module SizeMap (400)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module TreeMap (398)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module XmlParser (382)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module Blutility (380)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
+[2017.05.08-18.23.08:243][910]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
+[2017.05.08-18.23.08:244][910]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module AutomationController (360)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module Layers (356)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module Persona (348)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
+[2017.05.08-18.23.08:297][910]LogModuleManager: Shutting down and abandoning module Kismet (344)
+[2017.05.08-18.23.08:309][910]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
+[2017.05.08-18.23.08:309][910]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module Toolbox (338)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module OutputLog (332)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module GammaUI (330)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module Documentation (328)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module Niagara (326)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module PortalServices (320)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
+[2017.05.08-18.23.08:310][910]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module SteamVR (302)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module OculusInput (294)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module CableComponent (288)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
+[2017.05.08-18.23.08:345][910]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module SourceControl (247)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
+[2017.05.08-18.23.08:346][910]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
+[2017.05.08-18.23.08:347][910]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
+[2017.05.08-18.23.08:347][910]LogModuleManager: Shutting down and abandoning module MainFrame (232)
+[2017.05.08-18.23.08:347][910]LogModuleManager: Shutting down and abandoning module HotReload (231)
+[2017.05.08-18.23.08:347][910]LogDirectoryWatcher: A directory notification for 'C:/Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Binaries/Win64' was aborted.
+[2017.05.08-18.23.08:349][910]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
+[2017.05.08-18.23.08:349][910]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.08-18.23.08:349][910]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.08-18.23.08:349][910]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.08-18.23.08:349][910]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.08-18.23.08:450][910]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.08-18.23.08:551][910]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.08-18.23.08:552][910]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.08-18.23.08:552][910]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.08-18.23.08:552][910]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.08-18.23.08:560][910]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.08-18.23.08:722][910]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.08-18.23.08:723][910]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Ziggy/Documents/SourceTreeRepositories/BattleTankProject/BattleTank/Content/' was aborted.
+[2017.05.08-18.23.08:723][910]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.08-18.23.08:723][910]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.08-18.23.08:728][910]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.08-18.23.08:787][910]LogDerivedDataCache: Shutdown
+[2017.05.08-18.23.08:787][910]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.08-18.23.08:788][910]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.08-18.23.08:789][910]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.08-18.23.08:789][910]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.08-18.23.08:789][910]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.05.08-18.23.08:789][910]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B903E31FC-4357-A3C9-0CE0-39A5E9D72F07%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=24e04b4b428b8b44212f0d8344e6abf2%7C632015b1da4f41bc982c9d55f1bc8027%7C8e479c36-66ca-4b09-a4cf-be8e95aa911c&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.08-18.23.08:807][910]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.08-18.23.08:809][910]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.08-18.23.08:809][910]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.08-18.23.08:809][910]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.08-18.23.08:809][910]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.08-18.23.08:809][910]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.08-18.23.08:816][910]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.08-18.23.08:818][910]LogExit: Exiting.
+[2017.05.08-18.23.08:822][910]Log file closed, 05/08/17 14:23:08
