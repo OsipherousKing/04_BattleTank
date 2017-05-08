@@ -15,12 +15,17 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 	}
 	IMPLEMENT_CLASS(ABattleTankGameModeBase, 1780074155);
+	void AProjectile::StaticRegisterNativesAProjectile()
+	{
+	}
+	IMPLEMENT_CLASS(AProjectile, 209794658);
 	void ATank::StaticRegisterNativesATank()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "Fire",(Native)&ATank::execFire);
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetBarrelReference",(Native)&ATank::execSetBarrelReference);
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetTurretReference",(Native)&ATank::execSetTurretReference);
 	}
-	IMPLEMENT_CLASS(ATank, 3482313960);
+	IMPLEMENT_CLASS(ATank, 1589987968);
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 	}
@@ -44,6 +49,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
@@ -52,6 +58,9 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase();
+	BATTLETANK_API class UClass* Z_Construct_UClass_AProjectile_NoRegister();
+	BATTLETANK_API class UClass* Z_Construct_UClass_AProjectile();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_Fire();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_SetBarrelReference();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_SetTurretReference();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank_NoRegister();
@@ -100,6 +109,54 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABattleTankGameModeBase(Z_Construct_UClass_ABattleTankGameModeBase, &ABattleTankGameModeBase::StaticClass, TEXT("ABattleTankGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABattleTankGameModeBase);
+	UClass* Z_Construct_UClass_AProjectile_NoRegister()
+	{
+		return AProjectile::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AProjectile()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_BattleTank();
+			OuterClass = AProjectile::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Projectile.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Projectile.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AProjectile(Z_Construct_UClass_AProjectile, &AProjectile::StaticClass, TEXT("AProjectile"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AProjectile);
+	UFunction* Z_Construct_UFunction_ATank_Fire()
+	{
+		UObject* Outer=Z_Construct_UClass_ATank();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Fire"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Firing"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ATank_SetBarrelReference()
 	{
 		struct Tank_eventSetBarrelReference_Parms
@@ -163,12 +220,14 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ATank_Fire());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATank_SetBarrelReference());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATank_SetTurretReference());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_LaunchSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LaunchSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(LaunchSpeed, ATank), 0x0040000000000001);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_Fire(), "Fire"); // 849603197
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetBarrelReference(), "SetBarrelReference"); // 2570909085
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetTurretReference(), "SetTurretReference"); // 1358035061
 				OuterClass->StaticLink();
@@ -387,8 +446,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xE5497BA9;
-			Guid.B = 0x9000372B;
+			Guid.A = 0x8675BE79;
+			Guid.B = 0xEB600602;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
