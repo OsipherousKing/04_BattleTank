@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	void UTankTurret::StaticRegisterNativesUTankTurret()
 	{
 	}
-	IMPLEMENT_CLASS(UTankTurret, 741239421);
+	IMPLEMENT_CLASS(UTankTurret, 3683555872);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
@@ -359,6 +359,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20B01080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_MaxDegreesPerSecond = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxDegreesPerSecond"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MaxDegreesPerSecond, UTankTurret), 0x0040000000000001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -366,6 +369,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Object Activation Components|Activation Trigger"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankTurret.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankTurret.h"));
+				MetaData->SetValue(NewProp_MaxDegreesPerSecond, TEXT("Category"), TEXT("Setup"));
+				MetaData->SetValue(NewProp_MaxDegreesPerSecond, TEXT("ModuleRelativePath"), TEXT("Public/TankTurret.h"));
 #endif
 			}
 		}
@@ -382,7 +387,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x2F2AAA70;
+			Guid.A = 0xE5497BA9;
 			Guid.B = 0x9000372B;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

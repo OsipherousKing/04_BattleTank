@@ -23,7 +23,7 @@ public:
 
 	void AimAt(FVector HitLocation, float LaunchSpeed);
 
-	//TODO add set turret reference
+	
 
 private:	
 	
