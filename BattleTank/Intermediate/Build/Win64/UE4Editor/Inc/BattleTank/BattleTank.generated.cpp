@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UTankTrack::StaticClass(), "SetThrottle",(Native)&UTankTrack::execSetThrottle);
 	}
-	IMPLEMENT_CLASS(UTankTrack, 1444498387);
+	IMPLEMENT_CLASS(UTankTrack, 418972860);
 	void UTankTurret::StaticRegisterNativesUTankTurret()
 	{
 	}
@@ -433,6 +433,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Input"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankTrack.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("sets a throttle between -1 and +1"));
 #endif
 		}
 		return ReturnFunction;
@@ -456,7 +457,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_UTankTrack_SetThrottle());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankTrack_SetThrottle(), "SetThrottle"); // 2719795409
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_TrackMaxDrivingForce = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TrackMaxDrivingForce"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TrackMaxDrivingForce, UTankTrack), 0x0010000000010001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankTrack_SetThrottle(), "SetThrottle"); // 1922641105
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -465,6 +469,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankTrack.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankTrack.h"));
 				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("TankTrack is used to set maximum driving force and apply forces to the tank"));
+				MetaData->SetValue(NewProp_TrackMaxDrivingForce, TEXT("Category"), TEXT("TankTrack"));
+				MetaData->SetValue(NewProp_TrackMaxDrivingForce, TEXT("ModuleRelativePath"), TEXT("Public/TankTrack.h"));
+				MetaData->SetValue(NewProp_TrackMaxDrivingForce, TEXT("ToolTip"), TEXT("this is max force per track in newtons"));
 #endif
 			}
 		}
@@ -519,7 +526,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x9DCA87F5;
+			Guid.A = 0xBB6820C6;
 			Guid.B = 0x18797863;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
