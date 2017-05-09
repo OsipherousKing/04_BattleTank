@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetBarrelReference",(Native)&ATank::execSetBarrelReference);
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetTurretReference",(Native)&ATank::execSetTurretReference);
 	}
-	IMPLEMENT_CLASS(ATank, 2790287644);
+	IMPLEMENT_CLASS(ATank, 1644113347);
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 	}
@@ -40,8 +40,9 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	IMPLEMENT_CLASS(UTankBarrel, 3483904878);
 	void UTankMovementComponent::StaticRegisterNativesUTankMovementComponent()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "IntendMoveForward",(Native)&UTankMovementComponent::execIntendMoveForward);
 	}
-	IMPLEMENT_CLASS(UTankMovementComponent, 693733092);
+	IMPLEMENT_CLASS(UTankMovementComponent, 3624034270);
 	void ATankPlayerController::StaticRegisterNativesATankPlayerController()
 	{
 	}
@@ -81,6 +82,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController_NoRegister();
@@ -243,6 +245,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_ReloadTimeInSeconds = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ReloadTimeInSeconds"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReloadTimeInSeconds, ATank), 0x0040000000010001);
 				UProperty* NewProp_LaunchSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LaunchSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(LaunchSpeed, ATank), 0x0040000000010001);
 				UProperty* NewProp_ProjectileBlueprint = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileBlueprint"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(ProjectileBlueprint, ATank), 0x0044000000010001, Z_Construct_UClass_AProjectile_NoRegister(), UClass::StaticClass());
+				UProperty* NewProp_TankMovementComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TankMovementComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TankMovementComponent, ATank), 0x002008000008001c, Z_Construct_UClass_UTankMovementComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_Fire(), "Fire"); // 849603197
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetBarrelReference(), "SetBarrelReference"); // 2570909085
@@ -260,6 +263,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_LaunchSpeed, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
 				MetaData->SetValue(NewProp_ProjectileBlueprint, TEXT("Category"), TEXT("Setup"));
 				MetaData->SetValue(NewProp_ProjectileBlueprint, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+				MetaData->SetValue(NewProp_TankMovementComponent, TEXT("Category"), TEXT("Tank"));
+				MetaData->SetValue(NewProp_TankMovementComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_TankMovementComponent, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
 #endif
 			}
 		}
@@ -378,6 +384,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UTankBarrel(Z_Construct_UClass_UTankBarrel, &UTankBarrel::StaticClass, TEXT("UTankBarrel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UTankBarrel);
+	UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward()
+	{
+		struct TankMovementComponent_eventIntendMoveForward_Parms
+		{
+			float Throw;
+		};
+		UObject* Outer=Z_Construct_UClass_UTankMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IntendMoveForward"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(TankMovementComponent_eventIntendMoveForward_Parms));
+			UProperty* NewProp_Throw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Throw"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Throw, TankMovementComponent_eventIntendMoveForward_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Input"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankMovementComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister()
 	{
 		return UTankMovementComponent::StaticClass();
@@ -395,7 +423,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20B00084;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward());
 
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward(), "IntendMoveForward"); // 604718907
 				OuterClass->ClassConfigName = FName(TEXT("Engine"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -565,8 +595,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xDAC9B15D;
-			Guid.B = 0x8BFC5A56;
+			Guid.A = 0x75C7A34C;
+			Guid.B = 0xF9DC8AED;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

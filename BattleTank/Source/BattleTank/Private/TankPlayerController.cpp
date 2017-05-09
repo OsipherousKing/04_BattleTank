@@ -12,7 +12,7 @@ void ATankPlayerController::BeginPlay()
 	
 	Super::BeginPlay();
 
-	auto ControlledTank = GetControlledTank();
+	/*auto ControlledTank = GetControlledTank();
 	if (!ControlledTank)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("PlayerController is not  possesing a tank bitch"));
@@ -23,7 +23,7 @@ void ATankPlayerController::BeginPlay()
 	}
 	
 
-	
+	*/
 }
 
 // Tick 
