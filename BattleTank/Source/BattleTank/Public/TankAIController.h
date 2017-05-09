@@ -28,9 +28,7 @@ private:
 
 	void BeginPlay() override;
 
-	ATank* GetControlledTank() const; // Getter method to get tank
 
-	ATank* GetPlayerTank() const;
 };
 	
 	
