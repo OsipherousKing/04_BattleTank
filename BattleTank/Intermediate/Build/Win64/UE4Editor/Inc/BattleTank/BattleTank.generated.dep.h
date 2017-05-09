@@ -24,6 +24,9 @@
 #ifndef BATTLETANK_TankBarrel_generated_h
 	#include "Public/TankBarrel.h"
 #endif
+#ifndef BATTLETANK_TankMovementComponent_generated_h
+	#include "Public/TankMovementComponent.h"
+#endif
 #ifndef BATTLETANK_TankPlayerController_generated_h
 	#include "Public/TankPlayerController.h"
 #endif

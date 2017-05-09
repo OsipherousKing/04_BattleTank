@@ -577,6 +577,7 @@
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankAIController.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankAimingComponent.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankBarrel.cpp" />
+		<ClCompile Include="..\..\Source\BattleTank\Private\TankMovementComponent.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankPlayerController.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankTrack.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankTurret.cpp" />
@@ -585,6 +586,7 @@
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankAIController.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankAimingComponent.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankBarrel.h" />
+		<ClInclude Include="..\..\Source\BattleTank\Public\TankMovementComponent.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankPlayerController.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankTrack.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\TankTurret.h" />
