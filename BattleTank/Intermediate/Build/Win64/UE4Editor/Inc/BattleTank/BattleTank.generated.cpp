@@ -42,8 +42,9 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "Initialise",(Native)&UTankMovementComponent::execInitialise);
 		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "IntendMoveForward",(Native)&UTankMovementComponent::execIntendMoveForward);
+		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "IntendTurnRight",(Native)&UTankMovementComponent::execIntendTurnRight);
 	}
-	IMPLEMENT_CLASS(UTankMovementComponent, 3273989787);
+	IMPLEMENT_CLASS(UTankMovementComponent, 1052642833);
 	void ATankPlayerController::StaticRegisterNativesATankPlayerController()
 	{
 	}
@@ -85,6 +86,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_Initialise();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendTurnRight();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController_NoRegister();
@@ -434,6 +436,28 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendTurnRight()
+	{
+		struct TankMovementComponent_eventIntendTurnRight_Parms
+		{
+			float Throw;
+		};
+		UObject* Outer=Z_Construct_UClass_UTankMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IntendTurnRight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(TankMovementComponent_eventIntendTurnRight_Parms));
+			UProperty* NewProp_Throw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Throw"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Throw, TankMovementComponent_eventIntendTurnRight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Input"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankMovementComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister()
 	{
 		return UTankMovementComponent::StaticClass();
@@ -453,9 +477,11 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_Initialise());
 				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward());
+				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_IntendTurnRight());
 
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_Initialise(), "Initialise"); // 2577814884
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward(), "IntendMoveForward"); // 604718907
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_IntendTurnRight(), "IntendTurnRight"); // 82368049
 				OuterClass->ClassConfigName = FName(TEXT("Engine"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -628,8 +654,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xE4849357;
-			Guid.B = 0x2DB7B0A1;
+			Guid.A = 0xD2558670;
+			Guid.B = 0x01FA589D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
